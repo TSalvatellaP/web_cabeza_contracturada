@@ -1,0 +1,33 @@
+.page_footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    
+}
+
+.container_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.icons_img{
+    height: 25px;
+}
+
+.container_text{
+    @include texts ();
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 25px;
+}

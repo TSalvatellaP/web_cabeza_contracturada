@@ -1,0 +1,63 @@
+.hamb{
+    @include btn ();
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    @media(min-width: 768px){
+     display: none;
+
+    }
+          
+  }
+
+.page_header{
+    margin: 45px;
+    @include texts ();
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: center;
+    font-weight: bold;
+    color: $color_rosa;
+    @media(min-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        align-items: center;
+            
+        }
+
+}
+.links{
+    text-decoration: none; 
+    color: inherit; 
+  
+}
+.img_logo{
+    width: 175px;
+    
+    }
+
+.menu {
+    display: flex; 
+    justify-self: end; /* Mueve a la derecha */
+    margin-right: 50px;
+    
+            
+    &_ul{
+        display: none;
+        
+        @media(min-width: 768px) {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-items: end;
+          gap: 25px;
+        }
+      }
+    }
+

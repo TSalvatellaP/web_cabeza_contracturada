@@ -1,0 +1,26 @@
+@mixin texts (){
+    font-size: 1rem;
+    font-family: $font_text;
+    color: $color_morado;
+    line-height: 1.5;
+}
+
+@mixin btn () {
+    &:hover,
+    &:active,
+    &:focus {
+      background: $color_verde;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    outline: 0;
+    background: $color_rosa;
+    width: 50px;
+    border: 0;
+    padding: 15px;
+    color: white;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+  }

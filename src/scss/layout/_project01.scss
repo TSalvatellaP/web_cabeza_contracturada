@@ -1,0 +1,50 @@
+.page_project{
+    @include texts();
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    gap: 45px;
+    text-align: center;
+    @media(min-width: 768px){
+        text-align: left;
+
+    }
+
+}
+.content_text{
+    @media(min-width: 768px){
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items:center;
+    gap: 45px;
+    padding-top: 25px;
+}}
+.category{
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.art_img{
+    border: 2px solid $color_verde;
+    padding: 5px;   
+}
+.slide{
+    color: $color_rosa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+.related{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
