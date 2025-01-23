@@ -41,7 +41,7 @@
     }
 
 .menu {
-    //display: none;
+    display: none;
     @media(min-width: 768px){
     display: flex; 
     justify-self: end; /* Mueve a la derecha */
