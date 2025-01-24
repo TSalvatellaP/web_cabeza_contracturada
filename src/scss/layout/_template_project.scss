@@ -30,19 +30,26 @@
     @media(min-width: 768px){
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
-        
     
-
-    
-
     }
 }
-.gallery_img{
-    width: 100%;
+
+.gallery_img {
     border: 2px solid $color_verde;
     padding: 5px;
-    
-}
+    width: 400px; /* Ajusta el ancho según lo necesites */
+    height: 400px; /* Ajusta la altura según lo necesites */
+    object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
+    transition: transform 0.3s ease;  /* Animación suave para el cambio de tamaño */
+  }
+  
+  /* Clase para agrandar la imagen */
+  .gallery_img.large {
+    width: 100%;  /* Aumentamos el tamaño de la imagen */
+    z-index: 10;  /* Asegura que la imagen agrandada esté por encima de las demás */
+  }
+
+
 .slide{
     color: $color_rosa;
     display: flex;
@@ -60,3 +67,4 @@
     gap: 25px;
 
 }
+

@@ -9,7 +9,7 @@ const projectId = parseInt(urlParams.get("id"));
 const project = data.find((item) => item.id === projectId);
   let allImages = "";
   for (const images of project.images){
-    allImages += `<img class="gallery_img" src="${images}" alt="${project.title}"/>`;
+    allImages += `<img class="gallery_img js-gallery_img " src="${images}" alt="${project.title}"/>`;
   }
       // for (const project of data){ Recorro project.images para pintar todas del proyecto
       containerProject.innerHTML +=`
@@ -27,9 +27,5 @@ const project = data.find((item) => item.id === projectId);
         </div>`;
   }
    
-  renderDataProject ();
-  
-  
-  
-  
-  
+// Llamar a la función para renderizar el proyecto
+renderDataProject ();
