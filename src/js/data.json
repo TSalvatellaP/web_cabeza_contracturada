@@ -1,4 +1,152 @@
 [
+    {
+        "title": "NO PIERDAS LA CABEZA",
+        "desc": "lorem jlalalalala",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "El caldero roto",
+        "type": "Foto-montaje",
+        "id": 1
+    },
+    {
+        "title": "EL CALDERO ROTO",
+        "desc": "lorem jlalalalala",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "No pierdas la cabeza",
+        "type": "Foto-montaje",
+        "id": 2
+    },
+    {
+        "title": "LAS DISPONIBLES",
+        "desc": "Serie de muñecos hechos de papel maché, retales y objetos encontrados en la basura...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "proyecto relacionado",
+        "type": "",
+        "id": 3
+    },
+    {
+        "title": "HEYOKA",
+        "desc": "Heyoka es una pieza audiovisual que presenté junto al espacio Fosforita...",
+        "images": ["https://placehold.co/400x600"],
+        "related": "HYBRID Festival",
+        "type": "Vídeo-Arte",
+        "id": 4
+    },
+    {
+        "title": "LOS POLLITOS SALVARÁN LA CIUDAD",
+        "desc": "Esta intervención callejera ocurrió durante la Fase 0 y 0,5 del plan de desescalada del confinamiento en Madrid...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "",
+        "type": "Street-Art",
+        "id": 5
+    },
+    {
+        "title": "CAMINO DEL PSICÓLOGO",
+        "desc": "Tras el confinamiento, aunque ya podíamos salir a la calle y movernos por Madrid Centro...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "Publicación en la revista VooDoo nº 1",
+        "type": "Collages, Street-Art",
+        "id": 6
+    },
+    {
+        "title": "FAMILIA PERDIDA",
+        "desc": "Familia Perdida es una colección de fotografías de carnet encontradas en las calles de diferentes ciudades...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "",
+        "type": "Trash Art",
+        "id": 7
+    },
+    {
+        "title": "SEÑOROS",
+        "desc": "Señoros. Esculturas hechas con papel maché...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "",
+        "type": "Escultura, arcilla polimétrica",
+        "id": 8
+    },
+    {
+        "title": "ASFIXIANTE FRUSTRACIÓN",
+        "desc": "Serie de 3 piezas habla sobre la lucha emocional, la rabia y la frustración...",
+        "images": [
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "",
+        "type": "Escultura, técnica mixta",
+        "id": 9
+    },
+    {
+        "title": "SALIR DE LA BASURA",
+        "desc": "El proyecto Salir de la basura es volver a construirse tras el trauma...",
+        "images": [
+            "./images/salir de la basura/salir_1.png",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"
+        ],
+        "related": "Performance La procesión de la basura",
+        "type": "Performance",
+        "id": 10
+    },
+    {
+        "title": "REBELIÓN LÚDICA",
+        "desc": "Proyecto de arte residual donde se toman juguetes que están desechados para formar uno nuevo, como un monstruo de Frankenstein que se compone de partes dispares ensambladas en una nueva.          Upcycling como rebelión que desafía las convenciones sobre “cómo deberían ser” los juguetes y, por extensión, los cuerpos y las identidades. Crítica irónica a la importancia exagerada que la sociedad asigna a las normas de belleza y el perfeccionismo. Rebelión lúdica juega con el concepto de rechazo y la presión por encajar, subvirtiendo los conceptos estancos de belleza y fealdad. También rompe con la idea de “jugar bien”, abogando por un juego libre de restricciones. Al usar la yuxtaposición de piezas de juguetes asociados tradicionalmente a niñas y niños en una sola figura, también pretende poner en juego la fusión de géneros, rechazando las categorías rígidas y promoviendo una idea de juego inclusivo y no binario.",
+        "images": 
+            ["https://placehold.co/400x600",
+            "https://placehold.co/400x600",
+            "https://placehold.co/400x600"],
+        "related":"Taller deconstrucción de juguetes",
+        "type": "Trash Art",
+        "id": 11
+       
+    },
     {        
         "title": "PROCESIÓN DE LA VIRGEN DE LA BASURA",
         "desc": "lorem jlalalalala",
@@ -21,159 +169,6 @@
         "./images/virgen/virgen_16.jpeg"],
         "related":"Salir de la basura",
         "type":"Performance, Trash-Art",
-        "id": 1
-    },
-
-    {
-        "title": "REBELIÓN LÚDICA",
-        "desc": "Proyecto de arte residual donde se toman juguetes que están desechados para formar uno nuevo, como un monstruo de Frankenstein que se compone de partes dispares ensambladas en una nueva.          Upcycling como rebelión que desafía las convenciones sobre “cómo deberían ser” los juguetes y, por extensión, los cuerpos y las identidades. Crítica irónica a la importancia exagerada que la sociedad asigna a las normas de belleza y el perfeccionismo. Rebelión lúdica juega con el concepto de rechazo y la presión por encajar, subvirtiendo los conceptos estancos de belleza y fealdad. También rompe con la idea de “jugar bien”, abogando por un juego libre de restricciones. Al usar la yuxtaposición de piezas de juguetes asociados tradicionalmente a niñas y niños en una sola figura, también pretende poner en juego la fusión de géneros, rechazando las categorías rígidas y promoviendo una idea de juego inclusivo y no binario.",
-        "images": 
-            ["https://placehold.co/400x600",
-            "https://placehold.co/400x600",
-            "https://placehold.co/400x600"],
-        "related":"Taller deconstrucción de juguetes",
-        "type": "Trash Art",
-        "id": 2
-       
-    },
-
-    {
-        "title": "SALIR DE LA BASURA",
-        "desc": "El proyecto Salir de la basura es volver a construirse tras el trauma. Cuenta cómo, una vez que tu casa se ha destruido, cuando se han derrumbado todas tus estructuras, todos tus cimientos y solo quedan los escombros, lo tóxico, los desechos, la basura, hay que salir de ahí. Aceptar que ya nada del pasado queda y, en vez de seguir mirando lo perdido, atrapada entre lo acumulado, hay que salir de la basura para construir una nueva casa. Lo difícil que es estar en ese punto, a medio parir, entre lo viejo y lo nuevo, entre el atrape y la escapada, en transición. Salir de la basura es una metáfora de mi proceso terapeutico en el entorno pandémico que nos toco vivir: lo vivido, lo sufrido, como me quedé colapsada, trastornada al ver como todo mi sistema de valores se derrumbó, es inservible, como he sentido de pronto que otra vida es posible, que existen otras opciones, y aun así todo el esfuerzo era volver a la “normalidad”,  aunque ya nadie quiere volver a esa normalidad completamente obsoleta.  Este proyecto es un parto experimental y de búsqueda, la excusa perfecta para acceder a la basura, para manipularla. Una respuesta salvaje a estos años de obsesiva e ineludible prohibición de tocar, ese terror a infectar o infectarse, el mandato de no compartir fluidos, temer los desperdicios de otro. No tener contacto con lo real y consolarnos con lo virtual. Salir de la basura es un tratamiento de choque: volver a tocar la materia usada de otros, pringarse con ella, mezclarla, dejar que todo se infecte. Hacer algo con el desastre que nos ha quedado. Salir de la basura es una obra compuesta por una trilogía de collages Linaje materno, Linaje paterno, Compañeros de juegos.",
-        "images":
-        ["./images/salir de la basura/salir_1.png",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"Performance La procesión de la Virgen de la Basura",
-        "type": "Trash Art",
-        "id": 3
-    },
-
-    {
-        "title": "ASFIXIANTE FRUSTRACIÓN",
-        "desc": "Serie de 3 piezas habla sobre la lucha emocional, la rabia y la frustración. Con cada una de las piezas quería explicar las diferentes formas de sentir la frustración. El grito ahogado habla de la expresión no escuchada, la mano extendida es el esfuerzo frustrado al no poder alcanzar lo deseado, y la oreja es el intento de entender o ser entendido que no funciona. Con los diferentes materiales quería transmitir las diferentes barreras físicas y obstáculos a la que nos enfrentamos al intentar expresar, actuar o comprender. Es la lucha por romper con lo que nos bloquea, lo que nos deja callados, parados y confusos. El desorden en el intento de conectar con este mundo hostil, o conectar con los demás más allá de lo material. Es la desesperación de no sertirse en un mundo donde solo hay límites y barreras. Los tres forman el conjunto de necesidades básicas necesarias para la interación con el entorno, lo externo, lo otro, pero también con uno mismo.Sin embargo, aunque sobre todo expresa la frustración de movimientos a medias, bloqueados o impedidos a la vez es un intento de seguir buscando o seguir luchando en contra de las circunstancias, o seguir luchando para seguir el camino de romper con los límites.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"",
-        "type": "Escultura, técnica mixta",
-        "id": 4
-    },
-
-    {
-        "title": "SEÑOROS",
-        "desc": "Señoros. Esculturas hechas con papel maché. Esta serie de caras de ancianos, en ocasiones tendentes a lo monstruoso, conectan con varias líneas de exploración que me interesan: la muestra de lo viejo y deformado por el tiempo. De esta forma, estas caras, con un enganche para colgarlos de la pared, se transforman en idolillos, pequeñas deidades a tener en cuenta como ejemplo de lo que todos de algunan forma, interiormente y /o exteriormente, llegamos a ser: seres de alguna forma monstruosos modelados a fuerza de tiempo y experiencias. Con estas efigies de dioses inventados, como sucede en otras de mis obras, pretendo poner en valor lo monstruoso, lo no canónico, lo que se sale de la norma, lo queer.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"",
-        "type": "Escultura, arcilla polimétrica",
-        "id": 5
-    },
-
-    {
-        "title": "FAMILIA PERDIDA",
-        "desc": "Familia Perdida es una colección de fotografías de carnet encontradas en las calles de diferentes ciudades, en el metro, en bares, en rincones. Esta colección empezó en 2004, cuanto encontré la primera foto en una calle del barrio de Carabanchel. Era una foto antigua de una mujer joven, podría ser la típica foto que guardas en la cartera de tu madre de joven o de la abuela de joven, la foto que llevas siempre contigo para recordar a esa persona especial. Encontrármela me hizo pensar que alguien había perdido a su abuela y al llegar a casa, y descubrir que ya no tenía la foto, le daría pena. A mí me dio pena pensar que esa foto se quedaba ahí tirada en la calle, perdida, abandonada y, con el tiempo, olvidada. La segunda fotografía la encontré en un centro de salud. Supuse que a alguna abuelilla, al sacar su tarjeta, se le habría caído la foto de su nieto haciendo la mili. Me dio ternura al recordar la foto de mi tío Bienve, mi tío el pequeño, en su jura de bandera que mi abuela siempre tenía en el salón. Guardé estas dos fotografías como un intento de juntar a esa familia perdida y desestructurada (puesto que yo misma tenía una familia que no se hablaba desde hacía 20 años, fue mi forma de calmar ese vacío), que yo iba encontrando una a una según paseaba por la calle.Con el tiempo esta colección se ha convertido en parte de mi vida, que va creciendo sola por el azar y la casualidad. Se ha convertido también en parte de la vida de mis amigos, regalándome sus propias fotografías que encuentran en sus viajes, de camino al trabajo, de fiesta. Durante la cuarentena, una fan random, que seguía mis hallazgos por Instagram, me envió una carta con su propia fotografía carnet, quería pasar a formar parte de mi colección. Otro amigo, que también tiene el poder de encontrarse fotografías, me regaló la colección que había reunido durante años, que a su vez también se la había cedido otra amiga que también las coleccionaba. Como si se tratasen de cromos, intercambio fotos repetidas con otras personas que también las coleccionan. Algunas fotos estan rotas, en otras se puede ver la degradación de una noche de lluvia a la interperie, fotos de rupturas donde se intuye la rabia del despecho por la forma de arrugar la foto, de romperla . Familia perdida es una obra con vida propia que me va contando su historia.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"",
-        "type":"Trash Art",
-        "id": 6
-    },
-
-    {
-        "title": "CAMINO DEL PSICÓLOGO",
-        "desc": "Tras el confinamiento, aunque ya podíamos salir a la calle y movernos por Madrid Centro con cierta facilidad, evitaba coger transporte público, así que me acostumbré a salir de casa con tiempo suficiente para ir paseando hacía el lugar donde tenía que ir. Uno de los caminos más habituales que casi se convirtió en algo ritual fue el trayecto de mi casa al despacho de mi psicóloga. Cada semana, siempre a la misma hora, caminada de Doctor Esquerdo a Argüelles, y fue en uno de esos paseos  cuando se  me ocurrió imprimir carteles de los collages que  hacía durante las  interminables horas de teletrabajo y pegarlos por la calle. Camino del psicólogo es una serie de collages que muestran todo lo que iba experimentando a lo largo de todo el año 2021, ese año tan incierto y apocalíptico que comenzó con la nevada Filomena.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"Publicación en la revista VooDoo nº 1",
-        "type": "Collages, Street-Art",
-        "id": 7
-    },
-
-    {
-        "title": "LOS POLLITOS SALVARÁN LA CIUDAD",
-        "desc": "Esta intervención callejera ocurrió durante la Fase 0 y 0,5 del plan de desescalada del confinamiento en Madrid, cuando el Gobierno nos permitió poder salir en determinados horarios. Durante mis paseos a las seis de la mañana por la zona de Pacífico, se me ocurrió ir pegando pájaros de origami 3D en diferentes puntos donde fueran visibles para el resto de vecinos que también paseaban sin apenas mirarnos ni tocarnos. Era mi forma de mantener el contacto y de lanzar al aire un “¡Hola, vecino!”. Los pollitos, vulnerables y tiernos, una forma de arte fácilmente accesible para toda la población, representaban así los vínculos debilitados durante la pandemia, proponiendo un empujón a la unión a través de lo sencillo.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"",
-        "type": "Street-Art",
-        "id": 8
-    },
-
-    {
-        "title": "HEYOKA",
-        "desc": "Heyoka es una pieza audiovisual que presenté junto al espacio Fosforita, comisariada por Eva Zaragozá, dentro los proyectos seleccionados para el apartado de Interconectividad en la exposición Emergencia de la quinta edición de Hybrid Festival. A través de un montaje fragmentado y picado investigo sobre las identidades que adoptamos, los diferentes roles y cómo a veces nos perdemos entre todas las imágenes y espejos en donde nos vamos mirando y reflejando de forma algo inconsciente en este mundo tan hiperconectado y a la vez tan solitario. En esta pieza usé mi propio cuezrpo pintado, señalando la paradoja en esa conjunción de lo desnudo / camuflado. Heyoka es una especie de dios payaso, perteneciente al tercer género, dentro de la cultura Lakota. Es un antagonista, bufón y satírico, que habla, se mueve y reacciona de manera opuesta a las personas que los rodean. Funciona como un espejo y un maestro, utilizando comportamientos extremos para reflejar a los demás y obligándolos a examinar sus propias dudas, miedos, odios y debilidades.  Para mí fue muy importante conocer a este dios chamánico para identificarme con él en lo queer, para explorar el género, la vegüenza, y los miedos.",
-        "images":"https://placehold.co/400x600",
-        "related":"HYBRID Festival",
-        "type": "Vídeo-Arte",
-        "id": 9
-    },
-
-   
-    {
-        "title": "LAS DISPONIBLES",
-        "desc": "Serie de muñecos hechos de papel maché, retales y objetos encontrados en la basura. Cada uno de ellos representa un personaje que evoco como si fuera un ente que se comunica conmigo y quiere salir. Como la materialización de los arquetipos que viven dentro de mi. Los uso como talismán o amuleto de protección, puesto que les voy dando un nombre y personalidad mientras los voy creando. No nacen de una idea, no los planifico; los voy creando según voy construyendo movida por la intuición, que hace que el resultado final siempre sea una sorpresa. Todos los muñecos tienen en común ser parte de minorías  sociales, o personajes marginados, extraños y oscuros. La huida del perfeccionismo y el encuentro con la fealdad es lo que mantiene l aunión entre todos ellos. Es una serie de muñecos con mucha carga espiritual, de oscurantismo donde en ocasiones, durante el proceso, he realizado una serie de rituales, como construir la estructura del muñeco mezclando el papel maché con sandre menstrual. El relleno de algunos de estos personajes los he creado con hojas de mi diario rotas y arrugadas, como parte de un proceso de catarsis, de limpia con emociones que ya no quiero conmigo o que necesito atar para que no se me desborden. Cada uno de estos muñecos tiene su propia historia,  y a la vez son recuerdos de rozos de mi vida. Los voy reglando como amuleto de protección, ya que confío en que si a mí me ayudan a sobrellevar crisis emocionales con el nacimiento de cada uno de ellos, proveerán de auna ayuda similar a la persona que los reciba como amuleto.",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"proyecto relacionado",
-        "type":"",
-        "id": 10
-    },
-
-    {
-        "title": "EL CALDERO ROTO",
-        "desc": "lorem jlalalalala",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"No pierdas la cabeza",
-        "type":"Foto-montaje",
-        "id": 11
-    },
-
-    {
-        "title": "NO PIERDAS LA CABEZA",
-        "desc": "lorem jlalalalala",
-        "images":
-        ["https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600",
-        "https://placehold.co/400x600"],
-        "related":"El caldero roto",
-        "type":"Foto-montaje",
         "id": 12
     }
-
-
 ]

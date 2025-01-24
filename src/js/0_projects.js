@@ -12,7 +12,8 @@ const gallery = document.querySelector ('.js-gallery');
 //función para recorrer el array y que devuelva todos lo projectos. Esta función hay que llamarla en la página projects.html para no tener que ir añadiendo projectos nuevos, que vaya creciendo la lista
 
 function renderGallery (){
-    for (const project of data){
+  const sortedData = [...data].sort((a, b) => b.id - a.id);
+    for (const project of sortedData){
     gallery.innerHTML += 
     `<a href="./template_project.html?id=${project.id}" class="project-link js-images ">
         <img class="project_img js-img" src="${project.images[0]}" alt="${project.title}" data-id="${project.id}">

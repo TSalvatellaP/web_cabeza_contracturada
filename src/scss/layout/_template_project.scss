@@ -1,25 +1,18 @@
 .page_project{
     @include texts();
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 45px;
-    gap: 45px;
+    margin: 50px 100px 50px 100px;
     text-align: center;
     @media(min-width: 768px){
         text-align: left;
-
     }
 
 }
+
 .content_text{
     @media(min-width: 768px){
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-items:center;
-    gap: 45px;
     padding-top: 25px;
 }}
 .category{
@@ -27,9 +20,28 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.art_img{
+.content_gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+    padding-top: 25px;
+    @media(min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        
+    
+
+    
+
+    }
+}
+.gallery_img{
+    width: 100%;
     border: 2px solid $color_verde;
-    padding: 5px;   
+    padding: 5px;
+    
 }
 .slide{
     color: $color_rosa;
