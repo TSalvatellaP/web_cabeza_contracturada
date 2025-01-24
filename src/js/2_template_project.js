@@ -1,18 +1,17 @@
 import data from "./data.json";
-console.log(data);
-
-
+const articleProject = document.querySelector ('.js-project');
 //Funcion para pintar el projecto en el html
 function renderDataProject (){   
-    const project = data.find((item) => item.id === parseInt(projectId));
-  // tiene que recorrer el array de imágenes para que recorra cada una de las imagenes y pare el bucle cuando sea superir al tamaño del array
+ //el id del proyecto proviene de la URL 
+const urlParams = new URLSearchParams(window.location.search);
+const projectId = parseInt(urlParams.get("id"));
+//utilizo esa variable para buscar el proyecto qie se tiene que pintar:
+const project = data.find((item) => item.id === projectId);
   let allImages = "";
   for (const images of project.images){
     allImages += `<img class="art_img" src="${images}" alt="${project.title}"/>`;
-  
   }
-    
-    // for (const project of data){ Recorro project.images para pintar todas del proyecto
+      // for (const project of data){ Recorro project.images para pintar todas del proyecto
       articleProject.innerHTML +=`
         ${allImages}
         <div class="content_text">

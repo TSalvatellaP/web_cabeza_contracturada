@@ -8,8 +8,6 @@ ejecutar al cargar la página la función que recorre el array
 
 */
 const gallery = document.querySelector ('.js-gallery');
-const articleProject = document.querySelector ('.js-project');
-
 
 //función para recorrer el array y que devuelva todos lo projectos. Esta función hay que llamarla en la página projects.html para no tener que ir añadiendo projectos nuevos, que vaya creciendo la lista
 
