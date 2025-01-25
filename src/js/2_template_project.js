@@ -1,12 +1,20 @@
 import data from "./data.json";
+
 const containerProject = document.querySelector ('.js-container');
+//el id del proyecto proviene de la URL 
+const urlParams = new URLSearchParams(window.location.search);
+let projectId = parseInt(urlParams.get("id"));
+
+
+// Función para obtener el proyecto por su ID
+function getProjectById(id) {
+  return data.find((item) => item.id === id);
+}
+
 //Funcion para pintar el projecto en el html
 function renderDataProject (){   
- //el id del proyecto proviene de la URL 
-const urlParams = new URLSearchParams(window.location.search);
-const projectId = parseInt(urlParams.get("id"));
-//utilizo esa variable para buscar el proyecto qie se tiene que pintar:
-const project = data.find((item) => item.id === projectId);
+ //utilizo  el ID de la URL para buscar el proyecto qie se tiene que pintar y llamo a la funcion que me obtiene el ID
+const project = getProjectById(projectId);
   let allImages = "";
   for (const images of project.images){
     allImages += `<img class="gallery_img js-gallery_img " src="${images}" alt="${project.title}"/>`;
@@ -27,5 +35,27 @@ const project = data.find((item) => item.id === projectId);
         </div>`;
   }
    
-// Llamar a la función para renderizar el proyecto
+
+/// Botones para moverse de un proyecto a otro next <- ->
+
+const btnLeft = document.querySelector ('.js-btn_scroll_left')
+const btnRight = document.querySelector ('.js-btn_scroll_right')
+
+// Función para cambiar el proyecto mostrando el siguiente o anterior
+function changeProject(offset) {
+  // Hay que buscar la posicion ID
+  const currentIndex = data.findIndex((item) => item.id === projectId);
+  const newIndex = (currentIndex + offset + data.length) % data.length; // % para asegurarnos de que el índice nunca se desborde (devolverá al primer proyecto si estamos en el último, o al último proyecto si estamos en el primero).
+  const newProject = data[newIndex];
+  // Actualiza la URL para cargar el nuevo proyecto
+  window.location.search = `?id=${newProject.id}`;
+}
+
+// Habilitar los botones para navegar entre proyectos
+    btnLeft.addEventListener("click", () => changeProject(-1)); // Proyecto anterior
+    btnRight.addEventListener("click", () => changeProject(1)); // Proyecto siguiente
+
+    // Llamar a la función para renderizar el proyecto
 renderDataProject ();
+
+

@@ -1,8 +1,8 @@
 
-const carousel = document.querySelector(".carousel_items");
-const images = document.querySelectorAll(".carousel_items__img");
-const btnLeft = document.querySelector(".btn_scroll:not(.right)");
-const btnRight = document.querySelector(".btn_scroll.right");
+const carousel = document.querySelector(".js-carousel_items");
+const images = document.querySelectorAll(".js-carousel_items__img");
+const btnLeft = document.querySelector(".js-btn_scroll_left");
+const btnRight = document.querySelector(".js-btn_scroll_right");
 
 const totalImages = images.length;
 let index = 0;
@@ -30,3 +30,5 @@ btnLeft.addEventListener("click", () => {
 
 // Actualizar el carrusel al cargar la página
 updateCarousel();
+
+/*PEDIR AYUDA PARA QUE SEA UN BUCLE*/
