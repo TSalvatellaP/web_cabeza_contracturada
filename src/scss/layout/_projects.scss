@@ -21,6 +21,12 @@
         object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
         border: 2px solid $color_rosa;
         padding: 5px;
+        &:hover {
+            opacity: 0.5;
+            background: $color_rosa;
+           
+        }
+        
     }
     @media(min-width: 768px){
         &_gallery{

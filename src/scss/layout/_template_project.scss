@@ -43,12 +43,10 @@
     transition: transform 0.3s ease; 
   }
   
-  /* Clase para agrandar la imagen */
-  .gallery_img.large {
-    width: 100%;  /* Aumentamos el tamaño de la imagen */
-    z-index: 10;  /* Asegura que la imagen agrandada esté por encima de las demás */
-  }
-
+.gallery_media{
+    height: 100%;
+    width: 100%;
+}
 
 .slide{
     padding-top: 50px;

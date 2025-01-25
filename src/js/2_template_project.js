@@ -12,28 +12,44 @@ function getProjectById(id) {
 }
 
 //Funcion para pintar el projecto en el html
-function renderDataProject (){   
- //utilizo  el ID de la URL para buscar el proyecto qie se tiene que pintar y llamo a la funcion que me obtiene el ID
-const project = getProjectById(projectId);
-  let allImages = "";
-  for (const images of project.images){
-    allImages += `<img class="gallery_img js-gallery_img " src="${images}" alt="${project.title}"/>`;
+function renderDataProject() {
+  const project = getProjectById(projectId);
+  let allMedia = ""; 
+
+  for (const media of project.images) {
+    if (media.includes("youtube.com") || media.includes("vimeo.com")) {
+      // Si es un enlace de video (por ejemplo, de YouTube o Vimeo)
+      allMedia += `<iframe class="gallery_media js-gallery_media" 
+                        src="${media}" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>`;
+    } else if (media.match(/\.(mp4|webm|ogg)$/)) {
+      // Si es un enlace a un video con extensión conocida
+      allMedia += `<video class="gallery_media js-gallery_media" controls>
+                     <source src="${media}" type="video/${media.split('.').pop()}">
+                   </video>`;
+    } else {
+      // Si es un enlace a una imagen
+      allMedia += `<img class="gallery_img js-gallery_img" src="${media}" alt="${project.title}"/>`;
+    }
   }
-      // for (const project of data){ Recorro project.images para pintar todas del proyecto
-      containerProject.innerHTML +=`
-        <div class="content_gallery">${allImages}</div>
-        <div class="content_text">
-          <div>
-            <h2 class="content_h2">${project.title}</h2>
-            <p class="content_p">${project.desc}</p>
-          </div>
-          <div class="category">
-            <h4>CATEGORÍA</h4>
-            <p>${project.type || "Proyectos"}</p>
-            <h6>Comparte</h6>
-          </div>
-        </div>`;
-  }
+
+  containerProject.innerHTML += `
+    <div class="content_gallery">${allMedia}</div>
+    <div class="content_text">
+      <div>
+        <h2 class="content_h2">${project.title}</h2>
+        <p class="content_p">${project.desc}</p>
+      </div>
+      <div class="category">
+        <h4>CATEGORÍA</h4>
+        <p>${project.type || "Proyectos"}</p>
+        <h6>Comparte</h6>
+      </div>
+    </div>`;
+}
+
    
 
 /// Botones para moverse de un proyecto a otro next <- ->
@@ -57,5 +73,10 @@ function changeProject(offset) {
 
     // Llamar a la función para renderizar el proyecto
 renderDataProject ();
+
+//VENTANA MODAL AL CLICKAR CADA IMAGEN
+
+
+
 
 

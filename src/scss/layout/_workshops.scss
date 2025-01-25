@@ -22,8 +22,8 @@
     @media(min-width: 768px){
         &_gallery{
             display: grid;
-            grid-template-columns: repeat(3, 1fr); 
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 45px;
             padding: 20px;
             text-align: left;
         }

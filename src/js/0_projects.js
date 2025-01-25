@@ -13,7 +13,9 @@ const gallery = document.querySelector ('.js-gallery');
 
 function renderGallery (){
   const sortedData = [...data].sort((a, b) => b.id - a.id);
+  let allMedia = ""; 
     for (const project of sortedData){
+      
     gallery.innerHTML += 
     `<a href="./template_project.html?id=${project.id}" class="project-link js-images ">
         <img class="project_img js-img" src="${project.images[0]}" alt="${project.title}" data-id="${project.id}">
@@ -28,6 +30,9 @@ function renderGallery (){
     }
   
   }
+
+
+  
 renderGallery ();
 
 //Funcion manejadora, al hacer click en la imagen, se abre la página del proyecto. ESto lo he copiado, no sé si funciona.
