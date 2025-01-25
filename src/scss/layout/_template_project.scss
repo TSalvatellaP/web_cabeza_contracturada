@@ -37,10 +37,10 @@
 .gallery_img {
     border: 2px solid $color_verde;
     padding: 5px;
-    width: 400px; /* Ajusta el ancho según lo necesites */
-    height: 400px; /* Ajusta la altura según lo necesites */
+    width: 400px; 
+    height: 400px; 
     object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
-    transition: transform 0.3s ease;  /* Animación suave para el cambio de tamaño */
+    transition: transform 0.3s ease; 
   }
   
   /* Clase para agrandar la imagen */
@@ -51,20 +51,16 @@
 
 
 .slide{
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: $color_rosa;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 45px;
 }
-.related{
-    padding-top: 15px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
 
+.btn{
+    @include btn ();
 }
 
