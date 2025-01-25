@@ -1,13 +1,18 @@
 const images = document.querySelectorAll('.js-about_img'); // Selecciona todas las imágenes
 const modal = document.getElementById('myModal');
 const modalImg = document.getElementById('imgModal');
+const captionText = document.getElementById('caption');
 const closeBtn = document.querySelector('.js-close');
+const specialImage = document.querySelector('.js-img_special');
+const imageForModal = "/images/me/me_16.jpg";
 
 // Abre el modal con la imagen ampliada
 images.forEach(image => {
+    captionText.style.fontStyle = 'italic';
     image.addEventListener('click', function() {
         modal.style.display = "block"; // Muestra el modal
         modalImg.src = this.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
+        captionText.textContent = this.alt || '';
         
     });
 });
@@ -28,5 +33,9 @@ closeBtn.addEventListener('click', function() {
     modal.style.display = "none";
 });
 
-
+specialImage.addEventListener('click', function() {
+    modal.style.display = "block";
+    modalImg.src = imageForModal; // Cambia el src del modal por la imagen específica
+    
+});
 //PREGUNTAR POR QUÉ ES NECESARIO USAR EL ID Y una class

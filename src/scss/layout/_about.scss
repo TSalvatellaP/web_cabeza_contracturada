@@ -22,6 +22,12 @@
         border: 2px solid $color_verde;
         padding: 5px;
         align-items: center;
+        transition: opacity 0.3s ease; 
+        cursor: pointer;
+        &:hover {
+            opacity: 0.7;
+            background-color: $color_verde;
+        }
        
         
     }
@@ -100,4 +106,10 @@
     color: $color_rosa;
     cursor: pointer;
     z-index: 10000; /* Asegura que la "x" esté sobre otros elementos */
+}
+.modal-title{
+    font-family: $font_text;
+    color: $color_rosa;
+    
+
 }
