@@ -1,28 +1,30 @@
 .page_contact{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 45px;
+  gap: 50px;
+  text-align: center;
+  @media(min-width: 768px){
+    flex-direction: row;
+    align-items: center;
+    
+  }
 
 }
 .contact{
     @include texts ();
-    width: 80%;
-    margin: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    text-align: center;
-    @media(min-width: 768px){
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 45px;
-      align-items: start;
-      text-align: left;
     
-
+    @media(min-width: 768px){
+      text-align: left;
+      width: 50%;
     }
-
+    
 }
 .form{
     @include texts ();
@@ -51,7 +53,115 @@
     flex-direction: row;
     
   }
+  @media(min-width: 768px){
+    width: 50%;
+  }
 }
 
+.about{
+  @include texts ();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  
+  &_img{
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid $color_verde;
+      padding: 5px;
+      align-items: center;
+      transition: opacity 0.3s ease; 
+      cursor: pointer;
+      &:hover {
+          opacity: 0.5;
+          background: $color_verde;
+         
+      }
+      
+  }
+  &_article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 35px;
 
+  }
+  @media(min-width: 768px){
+    align-items: center;
+    width: 50%;
+    text-align:left;
+    
+  }
+   
+}
+
+.about_gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  gap: 2px;
+  @media(min-width: 768px){
+    width: 60%;
+  }
+  
+}
+.special{
+  transform: translate(15px, 15px)
+  
+}
+
+.pdf{
+  width: 100px;
+  border: 2px solid $color_rosa;
+  padding: 5px;
+}
+
+.modal {
+  position: fixed; /* Posiciona el modal de forma fija en la pantalla */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  max-width: 500px; 
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none; 
+  z-index: 10; 
+  
+
+}
+
+.modal-content {
+  width:100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 600px; 
+  transition: all 0.3s ease;
+  border: 2px solid $color_verde;
+  padding: 5px;
+}
+
+.close {
+  font-weight: bold;
+  position: absolute;
+  top:0px;
+  left: 2px;
+  font-size: 30px;
+  color: $color_rosa;
+  cursor: pointer;
+  z-index: 101; 
+}
+.modal-title{
+  font-family: $font_text;
+  color: $color_rosa;
+  
+
+}
   
