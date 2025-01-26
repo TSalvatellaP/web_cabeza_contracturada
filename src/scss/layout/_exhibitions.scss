@@ -29,20 +29,26 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    width: 80%;
+    align-items: center;
     &_img{
+        width:100%;
         @media(min-width: 768px){
         display: flex;
-        width:340px;
-        height: 160px;
+        width:560px;
+        height: auto;
         border: 2px solid $color_verde;
         }
+    
+    @media(min-width: 1280px){
+        align-items: first baseline;
+        
+    }
 }
 .article{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     margin-bottom: 15px;
     &_img{
         width:70px;
@@ -59,11 +65,15 @@
         color: rgba(246, 82, 160, 0.5); 
     }
     @media(min-width: 1280px){
-        width: 75%;
+        width:100%;
      
     }
     
     }
 
+}
+.video{
+    width: 100%;
+ 
 }
 

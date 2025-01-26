@@ -17,7 +17,7 @@ function renderGallery (){
     for (const project of sortedData){
       
     gallery.innerHTML += 
-    `<a href="./template_project.html?id=${project.id}" class="project-link js-images ">
+    `<a href="./template-each-project.html?id=${project.id}" class="project-link js-images ">
         <img class="project_img js-img" src="${project.images[0]}" alt="${project.title}" data-id="${project.id}">
         <p>${project.title}</p>
       </a>`;
@@ -40,7 +40,7 @@ function handleClickImg (event) {
   const clickedImg = event.target;
   const projectId = clickedImg.dataset.id; // Obtener el ID del proyecto
   if (projectId) {
-    window.location.href = `./template_project.html?id=${projectId}`;
+    window.location.href = `./template-each-project.html?id=${projectId}`;
   }
 }
 

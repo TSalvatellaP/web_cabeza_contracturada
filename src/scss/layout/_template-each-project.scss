@@ -25,22 +25,38 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    gap: 25px; 
+    gap: 15px; 
     padding-top: 25px;
     @media(min-width: 768px){
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-    
+        grid-template-columns: repeat(4, minmax(200px, 1fr)) ;
+        gap: 15px;
+        justify-items: center;  
+        justify-self: center;
+        :only-child { /* Selecciona el único hijo directo del .content_gallery */
+            grid-column: 1 / -1; /* Ocupa todo el ancho disponible (una columna) */
+            justify-self: center; 
+            align-self: center;
+            width: 80%;
+            height: auto;
+        }
+        
     }
+    
 }
 
 .gallery_img {
     border: 2px solid $color_verde;
     padding: 5px;
     width: 400px; 
-    height: 400px; 
+    height:auto; 
     object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
     transition: transform 0.3s ease; 
+    @media(min-width: 768px){
+        width: 300px; 
+        height:300px; 
+
+    }
+    
   }
   
 .gallery_media{
