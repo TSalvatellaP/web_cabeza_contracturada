@@ -1,15 +1,17 @@
 [
     {
-        "title": "NO PIERDAS LA CABEZA",
+        "title": "EL ARTE DE LA GUERRA",
         "desc": "Serie de foto montaje donde se muestra la simplicidad de la vida rural, pero contrastando con los elementos disruptivos rompe esa tranquilidad. Una reflexionar sobre las relaciones humanas con la naturaleza, el trabajo y la mortalidad. ¿Es una serie de escenas violentas, un accidente o un eco simbólico de las luchas que enfrentamos día a día?",
         "images": [
-            "./images/cabeza/cabeza (1).png",
-            "./images/cabeza/cabeza (2).jpg",
-            "./images/cabeza/cabeza (3).jpg",
-            "./images/cabeza/cabeza (5).jpg",
-            "./images/cabeza/cabeza (7).jpg",
-            "./images/cabeza/cabeza (8).jpg",
-            "./images/cabeza/cabeza (10).jpg"
+            "./images/guerra/guerra (1).png",
+            "./images/guerra/guerra (1).jpg",
+            "./images/guerra/guerra (2).jpg",
+            "./images/guerra/guerra (3).jpg",
+            "./images/guerra/guerra (4).jpg",
+            "./images/guerra/guerra (5).jpg",
+            "./images/guerra/guerra (6).jpg",
+            "./images/guerra/guerra (7).jpg"
+            
         ],
         "related": "El caldero roto",
         "type": "Foto-montaje",
@@ -19,7 +21,7 @@
         "title": "EL CALDERO ROTO",
         "desc": "lorem jlalalalala",
         "images": [
-            "./images/caldero/caldero 4.png",
+           
             "./images/caldero/caldero 3.PNG",
             "./images/caldero/caldero 1.PNG",
             "./images/caldero/caldero 2.PNG"
