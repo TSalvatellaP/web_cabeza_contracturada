@@ -85,36 +85,6 @@
     @include btn ();
 }
 
-.modal_social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-content: center;
-  width: 50px;
-  height: 200px;
-  background-color: $color_morado; /* Asegúrate de definir esta variable */
-  padding: 10px;
-  border-radius: 5px;
-
-  a {
-    margin-bottom: 10px; /* Espacio entre íconos */
-    text-decoration: none; /* Elimina subrayado, aunque no es visible en imágenes */
-
-    &:last-child {
-      margin-bottom: 0px; /* Quita margen del último elemento */
-    }
-
-    img {
-      width: 30px; /* Tamaño de los íconos */
-      height: 30px;
-      transition: transform 0.3s ease; /* Animación suave en hover */
-
-      &:hover {
-        transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-      }
-    }
-  }
-}
 .modal_project {
     position: fixed; 
     top: 50%;
@@ -127,7 +97,61 @@
     display: none; 
     z-index: 9999; 
   
+  }
+  .share-container {
+    position: relative; 
+    .share-button {
+      background: none;
+      border: none;
+      font-family: $font_text;
+      color: $color_morado;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        color: $color_rosa;
+      }
+    }
   
+    .modal_social {
+      display: none; /* Oculto por defecto */
+      position: absolute;
+      top: 30px; /* Ajusta según el tamaño del botón */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #EAEFBD;
+      border-radius: 5px;
+      padding: 10px;
+      width: 50px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .arrow {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid #EAEFBD;; /* Mismo color que el fondo */
+      }
+  
+      a {
+        display: block;
+        margin: 5px 0;
+  
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  
+    /* Mostrar el modal cuando esté activo */
+    &.active .modal_social {
+      display: block;
+    }
   }
   
   .modal_content_img {

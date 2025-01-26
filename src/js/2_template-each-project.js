@@ -50,43 +50,45 @@ function renderDataProject() {
       <div class="category">
         <h4>CATEGORÍA</h4>
         <p>${project.category || "Proyectos"}</p>
-        <h6 class="js-share" >Comparte</h6>
-        <div class="modal_social js-social ">
-            
-              <a
-                href="https://www.facebook.com/sharer/sharer.php?u=URL_DE_TU_OBRA"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Compartir en Facebook"
-              >
-              <img src="/images/Asset 2.svg" alt="Facebook">
-              </a>
-              <a
-                href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Compartir en X"
-              >
-              <img src="/images/Asset 1.svg" alt="X">
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Compartir en WhatsApp"
-              >
-              <img src="/images/Asset 11.svg" alt="Whatsapp">
-              </a>
-              <a
-                href="https://pinterest.com/pin/create/button/?media=https://de.pons.com/%C3%BCbersetzung/spanisch-deutsch/la+imagen&url=https://de.pons.com/%C3%BCbersetzung/spanisch-deutsch/p%C3%A1gina&description=¡Mira esta obra de arte! URL_DE_TU_OBRA"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Compartir en Pinterest"
-              >
-              <img src="/images/Asset 10.svg" alt="Pinterest">
-              </a>
-           
-          </div>
+        <div class="share-container">
+  <button class="share-button">Comparte</button>
+  <div class="modal_social">
+    <div class="arrow"></div>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=URL_DE_TU_OBRA"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Compartir en Facebook"
+    >
+      <img src="/images/Asset 2.svg" alt="Facebook">
+    </a>
+    <a
+      href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Compartir en X"
+    >
+      <img src="/images/Asset 1.svg" alt="X">
+    </a>
+    <a
+      href="https://pinterest.com/pin/create/button/?media=URL_DE_LA_IMAGEN&url=URL_DE_TU_OBRA"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Compartir en Pinterest"
+    >
+      <img src="/images/Asset 10.svg" alt="Pinterest">
+    </a>
+    <a
+      href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Compartir en WhatsApp"
+    >
+      <img src="/images/Asset 11.svg" alt="Whatsapp">
+    </a>
+    
+  </div>
+</div>
       </div>
     </div>`;
 }
@@ -170,13 +172,19 @@ addModalListeners()
 
 
 //MODAL SOCIAL
+document.addEventListener("DOMContentLoaded", () => {
+  const shareContainer = document.querySelector(".share-container");
+  const shareButton = document.querySelector(".share-button");
+  
+  // Evento para alternar el modal
+  shareButton.addEventListener("click", () => {
+    shareContainer.classList.toggle("active");
+  });
 
-const social = document.querySelector ('.js-social');
-const share = document.querySelector ('.js-share');
-
-let isOpen = false; // Track the open/closed state
-
-share.addEventListener('click', function() {
-  social.style.display = isOpen ? 'none' : 'block';
-  isOpen = !isOpen; // Toggle the open/closed state
+  // Cerrar el modal si haces clic fuera de él
+  document.addEventListener("click", (e) => {
+    if (!shareContainer.contains(e.target)) {
+      shareContainer.classList.remove("active");
+    }
+  });
 });
