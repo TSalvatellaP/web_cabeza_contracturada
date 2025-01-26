@@ -13,14 +13,19 @@ const gallery = document.querySelector ('.js-gallery');
 
 function renderGallery (){
   const sortedData = [...data].sort((a, b) => b.id - a.id);
-  let allMedia = ""; 
+  let mediaElement = "";
     for (const project of sortedData){
-      
+      if (project.type === "video") {
+        const thumbnailUrl = project.thumbnail || ""; 
+        mediaElement = `<img class="project_img" src="${thumbnailUrl}" alt="${project.title}" data-id="${project.id}">`; //Guardamos la url del video
+    } else if (project.type === "image") {
+        mediaElement = `<img class="project_img" src="${project.images[0]}" alt="${project.title}" data-id="${project.id}">`;
+    } 
     gallery.innerHTML += 
-    `<a href="./template-each-project.html?id=${project.id}" class="project-link js-images ">
-        <img class="project_img js-img" src="${project.images[0]}" alt="${project.title}" data-id="${project.id}">
+    `<a href="./template-each-project.html?id=${project.id}" class="project-link">
+        ${mediaElement}
         <p>${project.title}</p>
-      </a>`;
+     </a>`;
     }
     // Seleccionar todas las imagenes,  recorrerlas y escuchar el ev sobre cada una de las  imagenes
     const allImages = document.querySelectorAll  ('.js-images');  

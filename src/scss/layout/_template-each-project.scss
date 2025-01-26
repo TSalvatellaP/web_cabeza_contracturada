@@ -28,7 +28,7 @@
     gap: 15px; 
     padding-top: 25px;
     @media(min-width: 768px){
-        grid-template-columns: repeat(4, minmax(200px, 1fr)) ;
+        grid-template-columns: repeat(4, 1fr);
         gap: 15px;
         justify-items: center;  
         justify-self: center;
@@ -36,13 +36,16 @@
             grid-column: 1 / -1; /* Ocupa todo el ancho disponible (una columna) */
             justify-self: center; 
             align-self: center;
-            width: 80%;
-            height: auto;
+            width:80%;
+            height:auto;
+           
+            
         }
         
     }
     
 }
+
 
 .gallery_img {
     border: 2px solid $color_verde;

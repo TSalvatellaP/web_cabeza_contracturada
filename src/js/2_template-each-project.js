@@ -19,14 +19,14 @@ function renderDataProject() {
   for (const media of project.images) {
     if (media.includes("youtube.com") || media.includes("vimeo.com")) {
       // Si es un enlace de video (por ejemplo, de YouTube o Vimeo)
-      allMedia += `<iframe class="gallery_media js-gallery_media" 
+      allMedia += `<iframe class=" js-gallery_media" 
                         src="${media}" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen></iframe>`;
     } else if (media.match(/\.(mp4|webm|ogg)$/)) {
       // Si es un enlace a un video con extensión conocida
-      allMedia += `<video class="gallery_media js-gallery_media" controls>
+      allMedia += `<video class=" gallery_media js-gallery_media" controls>
                      <source src="${media}" type="video/${media.split('.').pop()}">
                    </video>`;
     } else {

@@ -7,7 +7,7 @@
         ],
         "date": "2012, Madrid",
         "related": "Las tres Marías",
-        "type": "Tríptico fotográfico",
+        "type": "image",
         "id": 1
     },
 
@@ -20,7 +20,7 @@
         ],
         "date": "2012, Madrid ",
         "related": "Torunda",
-        "type": "Fotografía",
+        "type": "image",
         "id": 2
     },
 
@@ -39,7 +39,7 @@
         ],
         "date": "2014, Madrid",
         "related": "El caldero roto",
-        "type": "Foto-montaje",
+        "type": "image",
         "id": 3
     },
     {
@@ -53,7 +53,7 @@
         ],
         "date": "2013, Madrid",
         "related": "No pierdas la cabeza",
-        "type": "Foto-montaje",
+        "type": "image",
         "id": 4
     },
     {
@@ -70,20 +70,20 @@
         ],
         "date": "2017, Madrid",
         "related": "proyecto relacionado",
-        "type": "",
+        "type": "image",
         "id": 5
     },
     {
         "title": "HEYOKA",
         "desc": "Heyoka es una pieza audiovisual que presenté junto al espacio Fosforita, comisariada por Eva Zaragozá, dentro los proyectos seleccionados para el apartado de Interconectividad en la exposición Emergencia de la quinta edición de Hybrid Festival. A través de un montaje fragmentado y picado investigo sobre las identidades que adoptamos, los diferentes roles y cómo a veces nos perdemos entre todas las imágenes y espejos en donde nos vamos mirando y reflejando de forma algo inconsciente en este mundo tan hiperconectado y a la vez tan solitario. En esta pieza usé mi propio cuezrpo pintado, señalando la paradoja en esa conjunción de lo desnudo / camuflado. Heyoka es una especie de dios payaso, perteneciente al tercer género, dentro de la cultura Lakota. Es un antagonista, bufón y satírico, que habla, se mueve y reacciona de manera opuesta a las personas que los rodean. Funciona como un espejo y un maestro, utilizando comportamientos extremos para reflejar a los demás y obligándolos a examinar sus propias dudas, miedos, odios y debilidades.  Para mí fue muy importante conocer a este dios chamánico para identificarme con él en lo queer, para explorar el género, la vegüenza, y los miedos.",
         "images": [
-            "./images/heyoka/heyoka3.jpg",
-            "https://www.youtube.com/embed/-YnybtISFg0?si=bBu834Xx5h3-xhr9"
+             "https://www.youtube.com/embed/-YnybtISFg0?si=bBu834Xx5h3-xhr9"
            
         ],
+        "thumbnail": "./images/heyoka/heyoka3.jpg",
         "date": "2021, Madrid",
         "related": "HYBRID Festival",
-        "type": "Vídeo-Arte",
+        "type":"video",
         "id": 6
     },
     {
@@ -106,7 +106,7 @@
         ],
         "date": "2020, Madrid",
         "related":"HEYOKA",
-        "type": "Street-Art",
+        "type": "image",
         "id": 7
     },
     {
@@ -133,7 +133,7 @@
         ],
         "date": "2021, Madrid",
         "related": "Recortando lo inexpresable",
-        "type": "Collages, Street-Art",
+        "type": "image",
         "id": 8
     },
     {
@@ -170,7 +170,7 @@
         ],
         "date": "Desde 2004, cualquier lugar...",
         "related": "",
-        "type": "Trash Art",
+        "type": "image",
         "id": 9
     },
     {
@@ -183,7 +183,7 @@
         ],
         "date": "2022, Madrid",
         "related": "",
-        "type": "Escultura, arcilla polimétrica",
+        "type": "image",
         "id": 10
     },
     {
@@ -196,7 +196,7 @@
         ],
         "date": "2023, Madrid",
         "related": "",
-        "type": "Escultura, técnica mixta",
+        "type": "image",
         "id": 11
     },
     {
@@ -222,7 +222,7 @@
                  ],
                  "date": "2023, Madrid",
         "related": "Performance La procesión de la basura",
-        "type": "Performance",
+        "type": "image",
         "id": 12
     },
     {
@@ -237,7 +237,7 @@
             "./images/rebelion/rebelion (5).png"],
         "date": "2024, Madrid",
         "related":"Taller deconstrucción de juguetes",
-        "type": "Trash Art",
+        "type": "image",
         "id": 13
        
     },
@@ -265,7 +265,7 @@
         ],
         "date": "2020, Madrid",
         "related": "Publicación en la revista VooDoo nº 1",
-        "type": "Collages, Street-Art",
+        "type": "image",
         "id": 14
     },
     {        
@@ -290,7 +290,7 @@
         "./images/virgen/virgen_15.jpeg"],
         "date": "2023, Madrid",
         "related":"Salir de la basura",
-        "type":"Performance, Trash-Art",
+        "type":"image",
         "id": 15
     }
 ]
