@@ -53,7 +53,12 @@
     width: 400px; 
     height:auto; 
     object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.5;
+        background: $color_verde;
+    } 
     @media(min-width: 768px){
         width: 300px; 
         height:300px; 
@@ -96,29 +101,29 @@
   }
 }
 .modal_project {
-    position: fixed; /* Posiciona el modal de forma fija en la pantalla */
-    top: 50%; /* Centra el modal verticalmente */
-    left: 50%; /* Centra el modal horizontalmente */
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
     transform: translate(-50%, -50%); /* Ajusta el modal para que esté completamente centrado */
-    width: 80%; /* Ajusta el tamaño del modal */
-    max-width: 500px; /* Establece un tamaño máximo */
+    width:50%; 
+    height:auto;
     background-color: white;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none; /* Asegúrate de que el modal esté oculto por defecto */
-    z-index: 9999; /* Asegura que el modal esté sobre otros elementos */
+    display: none; 
+    z-index: 9999; 
   
   
   }
   
   .modal_content_img {
-    width:100%;
-    height: auto;
-    object-fit: contain;
-    max-width: 600px; /* Asegura que la imagen no sea demasiado grande */
+    max-width: 90%; // Ancho máximo del contenido
+    padding: 20px;
     transition: all 0.3s ease;
     border: 2px solid $color_verde;
-    padding: 5px;
+    max-width: 90%; // Ancho máximo del contenido
+    max-height: 90vh; 
+    margin: 20px auto; 
+    overflow: hidden;
     
   }
   .modal_img{
@@ -132,26 +137,26 @@
     font-weight: bold;
     position: absolute;
     top:0px;
-    left: 2px;
+    right:2px;
     font-size: 30px;
     color: $color_rosa;
     cursor: pointer;
-    z-index: 10000; /* Asegura que la "x" esté sobre otros elementos */
+    z-index: 10000; 
   }
-  .modal_title_img{
+  .container_caption{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-items: center;
     font-family: $font_text;
     color: $color_rosa;
+    font-weight: bold;
+  }
   
-  }
-
-  .scroll_right{
+  .scroll{
     @include btn ();
-    transform:translateX(-15px);
-    
-    
+   
   }
-  .scroll_left{
-    @include btn ();
-    transform: translateX(15px);
-    
-  }
+  
