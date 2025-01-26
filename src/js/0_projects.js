@@ -36,8 +36,6 @@ function renderGallery (){
   
   }
 
-
-  
 renderGallery ();
 
 //Funcion manejadora, al hacer click en la imagen, se abre la página del proyecto. ESto lo he copiado, no sé si funciona.

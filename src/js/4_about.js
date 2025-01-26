@@ -17,17 +17,6 @@ images.forEach(image => {
     });
 });
 
-// Cierra el modal cuando se hace clic en la imagen dentro del modal
-modalImg.addEventListener('click', function() {
-    modal.style.display = "none"; // Cierra el modal
-});
-
-// Cierra el modal si se hace clic fuera de la imagen
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none"; // Cierra el modal si se hace clic fuera de la imagen
-    }
-});
 // Cierra el modal cuando se hace clic en la "x"
 closeBtn.addEventListener('click', function() {
     modal.style.display = "none";

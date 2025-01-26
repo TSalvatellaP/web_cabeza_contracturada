@@ -4,7 +4,8 @@ const containerProject = document.querySelector ('.js-container');
 //el id del proyecto proviene de la URL 
 const urlParams = new URLSearchParams(window.location.search);
 let projectId = parseInt(urlParams.get("id"));
-
+let allMedia = "";
+let slideIndex = 0;
 
 // Función para obtener el proyecto por su ID
 function getProjectById(id) {
@@ -14,7 +15,7 @@ function getProjectById(id) {
 //Funcion para pintar el projecto en el html
 function renderDataProject() {
   const project = getProjectById(projectId);
-  let allMedia = ""; 
+   
 
   for (const media of project.images) {
     if (media.includes("youtube.com") || media.includes("vimeo.com")) {
@@ -97,12 +98,51 @@ function changeProject(offset) {
     btnLeft.addEventListener("click", () => changeProject(-1)); // Proyecto anterior
     btnRight.addEventListener("click", () => changeProject(1)); // Proyecto siguiente
 
-    // Llamar a la función para renderizar el proyecto
+// Llamar a la función para renderizar el proyecto
 renderDataProject ();
 
 //VENTANA MODAL AL CLICKAR CADA IMAGEN
+const mediaInModal = document.querySelectorAll ('.js-gallery_img');
+const modal = document.querySelector('.js-mymodal');
+const modalImg = document.querySelector('.js-imgModal');
+const closeBtn = document.querySelector('.js-close');
+const scrollLeft = document.querySelector ('.js-scroll_left');
+const scrollRight = document.querySelector ('.js-scroll_right');
 
 
+// Abre el modal con la imagen ampliada
+mediaInModal.forEach(item => {
+  item.addEventListener('click', function() {
+      modal.style.display = "block"; // Muestra el modal
+      modalImg.src = item.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
+      slideIndex = index;
+  
+  });
+});
 
+scrollLeft.addEventListener('click', () => {
+  changeSlide(-1);
+});
+
+scrollRight.addEventListener('click', () => {
+  changeSlide(1);
+});
+
+function changeSlide(n) {
+  //slideIndex = slideIndex + n;
+  slideIndex += n;
+  if (slideIndex < 0) {
+      slideIndex = mediaInModal.length - 1;
+  } else if (slideIndex >= mediaInModal.length) {
+      slideIndex = 0;
+  }
+  modalImg.src = mediaInModal[slideIndex].src;
+  modalImg.alt = mediaInModal[slideIndex].alt; // Actualiza el alt al cambiar de imagen
+}
+
+// Cierra el modal cuando se hace clic en la "x"
+closeBtn.addEventListener('click', function() {
+  modal.style.display = "none";
+});
 
 
