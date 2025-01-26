@@ -41,16 +41,42 @@ function renderDataProject() {
       <div>
         <h2 class="content_h2">${project.title}</h2>
         <p class="content_p">${project.desc}</p>
+        <p class="content_p">${project.date}</p>
       </div>
       <div class="category">
         <h4>CATEGORÍA</h4>
         <p>${project.type || "Proyectos"}</p>
         <h6>Comparte</h6>
+        <div class="social-share">
+  <a
+    href="https://www.facebook.com/sharer/sharer.php?u=URL_DE_TU_OBRA"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Compartir en Facebook"
+  >
+    Facebook
+  </a>
+  <a
+    href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Compartir en X"
+  >
+    X (Twitter)
+  </a>
+  <a
+    href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Compartir en WhatsApp"
+  >
+    WhatsApp
+  </a>
+</div>
       </div>
     </div>`;
 }
 
-   
 
 /// Botones para moverse de un proyecto a otro next <- ->
 
