@@ -46,7 +46,6 @@
     
 }
 
-
 .gallery_img {
     border: 2px solid $color_verde;
     padding: 5px;
@@ -85,19 +84,35 @@
 .btn{
     @include btn ();
 }
-.social-share {
-    a{
-    text-decoration: none;
-    margin-right: 10px;
-    padding: 5px 10px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #fff;
-    background-color: $color_verde;
-    &:hover {
-        background-color:$color_morado;
+
+.modal_social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-content: center;
+  width: 50px;
+  height: 200px;
+  background-color: $color_morado; /* Asegúrate de definir esta variable */
+  padding: 10px;
+  border-radius: 5px;
+
+  a {
+    margin-bottom: 10px; /* Espacio entre íconos */
+    text-decoration: none; /* Elimina subrayado, aunque no es visible en imágenes */
+
+    &:last-child {
+      margin-bottom: 0px; /* Quita margen del último elemento */
+    }
+
+    img {
+      width: 30px; /* Tamaño de los íconos */
+      height: 30px;
+      transition: transform 0.3s ease; /* Animación suave en hover */
+
+      &:hover {
+        transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
       }
+    }
   }
 }
 .modal_project {

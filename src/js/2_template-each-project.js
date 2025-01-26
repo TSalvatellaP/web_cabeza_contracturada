@@ -46,37 +46,47 @@ function renderDataProject() {
         <h2 class="content_h2">${project.title}</h2>
         <p class="content_p">${project.desc}</p>
         <p class="content_p">${project.date}</p>
-      </div>
+    </div>
       <div class="category">
         <h4>CATEGORÍA</h4>
-        <p>${project.type || "Proyectos"}</p>
-        <h6>Comparte</h6>
-        <div class="social-share">
-  <a
-    href="https://www.facebook.com/sharer/sharer.php?u=URL_DE_TU_OBRA"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Compartir en Facebook"
-  >
-    Facebook
-  </a>
-  <a
-    href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Compartir en X"
-  >
-    X (Twitter)
-  </a>
-  <a
-    href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Compartir en WhatsApp"
-  >
-    WhatsApp
-  </a>
-</div>
+        <p>${project.category || "Proyectos"}</p>
+        <h6 class="js-share" >Comparte</h6>
+        <div class="modal_social js-social ">
+            
+              <a
+                href="https://www.facebook.com/sharer/sharer.php?u=URL_DE_TU_OBRA"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Compartir en Facebook"
+              >
+              <img src="/images/Asset 2.svg" alt="Facebook">
+              </a>
+              <a
+                href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Compartir en X"
+              >
+              <img src="/images/Asset 1.svg" alt="X">
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Compartir en WhatsApp"
+              >
+              <img src="/images/Asset 11.svg" alt="Whatsapp">
+              </a>
+              <a
+                href="https://pinterest.com/pin/create/button/?media=https://de.pons.com/%C3%BCbersetzung/spanisch-deutsch/la+imagen&url=https://de.pons.com/%C3%BCbersetzung/spanisch-deutsch/p%C3%A1gina&description=¡Mira esta obra de arte! URL_DE_TU_OBRA"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Compartir en Pinterest"
+              >
+              <img src="/images/Asset 10.svg" alt="Pinterest">
+              </a>
+           
+          </div>
       </div>
     </div>`;
 }
@@ -98,8 +108,8 @@ function changeProject(offset) {
 }
 
 // Habilitar los botones para navegar entre proyectos
-  btnLeft.addEventListener("click", () => changeProject(-1)); // Proyecto anterior
-  btnRight.addEventListener("click", () => changeProject(1)); // Proyecto siguiente
+btnRight.addEventListener("click", () => changeProject(-1)); 
+btnLeft.addEventListener("click", () => changeProject(1)); 
 
 // Llamar a la función para renderizar el proyecto
 renderDataProject ();
@@ -158,3 +168,15 @@ closeBtn.addEventListener('click', function() {
 
 addModalListeners()
 
+
+//MODAL SOCIAL
+
+const social = document.querySelector ('.js-social');
+const share = document.querySelector ('.js-share');
+
+let isOpen = false; // Track the open/closed state
+
+share.addEventListener('click', function() {
+  social.style.display = isOpen ? 'none' : 'block';
+  isOpen = !isOpen; // Toggle the open/closed state
+});
