@@ -1,4 +1,4 @@
-import data from "./data.json";
+import data from "./projects.json";
 
 const containerProject = document.querySelector ('.js-container');
 //el id del proyecto proviene de la URL 
@@ -15,9 +15,6 @@ function getProjectById(id) {
 //Funcion para pintar el projecto en el html
 function renderDataProject() {
   const project = getProjectById(projectId);
- 
- 
-
   for (let i = 0; i < project.images.length; i++)  {
     const media = project.images[i];
     const imageDescription = project.imageDescriptions[i];

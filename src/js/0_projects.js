@@ -1,4 +1,4 @@
-import data from "./data.json";
+import data from "./projects.json";
 /* 
 1- En el menu de projectos al clickar en una imagen, tiene que abrir la página de ese proyecto. (un evento llama al id concreto del proyecto) click === data.id
 2- Se abre la página nueva de un projecto. Ahi es donde se tiene que pintar 

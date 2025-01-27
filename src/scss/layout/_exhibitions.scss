@@ -23,9 +23,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
+    gap: 100px;
      }
 }
 .section{
+    width: 80%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -34,15 +36,14 @@
         width:100%;
         @media(min-width: 768px){
         display: flex;
-        width:560px;
-        height: auto;
         border: 2px solid $color_verde;
         }
-    
-    @media(min-width: 1280px){
-        align-items: first baseline;
-        
-    }
+       
+}
+.section_video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: fill;
 }
 .article{
     display: flex;

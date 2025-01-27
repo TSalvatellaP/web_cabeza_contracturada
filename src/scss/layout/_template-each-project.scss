@@ -80,7 +80,12 @@
     align-items: center;
     gap: 45px;
 }
-
+.line {
+  border: none;
+  border-top: 2px solid $color_verde; 
+  width: 100%; 
+  margin: 10px 0; 
+}
 .btn{
     @include btn ();
 }
@@ -113,10 +118,11 @@
     }
   
     .modal_social {
-      display: none; /* Oculto por defecto */
+      display: none; 
       position: absolute;
-      top: 30px; /* Ajusta según el tamaño del botón */
-      left: 50%;
+      top: 30px; 
+      left: 10%;
+      z-index: 10000;
       transform: translateX(-50%);
       background-color: #EAEFBD;
       border-radius: 5px;
@@ -124,6 +130,10 @@
       width: 50px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      @media(min-width: 768px){
+      left: 20%;
+
+      }
   
       .arrow {
         position: absolute;

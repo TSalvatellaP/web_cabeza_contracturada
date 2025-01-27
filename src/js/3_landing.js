@@ -1,34 +1,34 @@
-
+// Seleccionar los elementos del carrusel
 const carousel = document.querySelector(".js-carousel_items");
 const images = document.querySelectorAll(".js-carousel_items__img");
 const btnLeft = document.querySelector(".js-btn_scroll_left");
 const btnRight = document.querySelector(".js-btn_scroll_right");
 
+// Determinar el número total de imágenes
 const totalImages = images.length;
-let index = 0;
+let index = 0; // Índice inicial del carrusel
 
 // Función para actualizar la posición del carrusel
-const updateCarousel = () => {
-  const imageWidth = images[0].clientWidth; //para que se mueva el ancho de la imagen
-  carousel.style.transform = `translateX(-${index * imageWidth}px)`;
+function updateCarousel() {
+  const imageWidth = images[0].offsetWidth; // Obtener el ancho de la imagen
+  carousel.style.transition = "transform 0.3s ease-in-out"; // Animación suave
+  carousel.style.transform = `translateX(-${index * imageWidth}px)`; // Mover el carrusel
+}
+
+
+// Función para manejar el clic en el botón derecho
+btnRight.onclick = function() {
+  index--; // Aumentar índice para ir a la imagen anterior
+  if (index < 0) {
+    index = totalImages - 1; 
+  }
+  updateCarousel();
 };
 
-// Botón derecho 
-btnRight.addEventListener("click", () => {
-    index = (index - 1 + totalImages) % totalImages;  // % nos ahorramos la condicional
-    /*if (index < 0) {
-        index = totalImages - 1; // Si retrocedes más allá del inicio, ve al final
-      }*/
+btnLeft.onclick = function() {
+  index++; // Disminuir índice para ir a la imagen siguiente
+  if (index >= totalImages) {
+    index = 0; 
+  }
   updateCarousel();
-});
-
-// Botón izquierdo 
-btnLeft.addEventListener("click", () => {
-    index = (index + 1 + totalImages ) % totalImages; // % Vuelve al final si es menor que 0
-  updateCarousel();
-});
-
-// Actualizar el carrusel al cargar la página
-updateCarousel();
-
-/*PEDIR AYUDA PARA QUE SEA UN BUCLE*/
+};
