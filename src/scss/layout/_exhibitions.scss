@@ -38,13 +38,15 @@
         display: flex;
         border: 2px solid $color_verde;
         }
-       
+    }
+    &_video{
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: fill;
+        
+    }
 }
-.section_video{
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: fill;
-}
+
 .article{
     display: flex;
     flex-direction: row-reverse;
@@ -71,10 +73,19 @@
     }
     
     }
+    .div_media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .left_exb{
+        transform: translateX(25px);
+    }
 
-}
-.video{
-    width: 100%;
- 
-}
+    .right_exb{
+        transform: translateX(-25px);
+
+    }
+
+
 

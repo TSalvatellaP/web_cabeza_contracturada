@@ -4,10 +4,11 @@ const containerExb = document.querySelector('.js-container');
 
 // Función para renderizar las exposiciones
 function renderDataExb() {
+  const sortedData = [...data].sort((a, b) => b.id - a.id);
   let allMedia = "";
-
+  
   // Recorrer cada exposición en el array `data`
-  for (const item of data) {
+  for (const item of sortedData) {
     // Tomar la primera imagen del array `images` (si existe)
     const media = item.images[0] || "";
     const imageDescription = item.imageDescriptions[0] || "Descripción no disponible";
@@ -36,7 +37,11 @@ function renderDataExb() {
     // Construir el contenido HTML de la sección
     allMedia += `
       <section class="section">
-      ${mediaContent}
+      <div class="div_media">
+        
+        ${mediaContent}
+        
+      </div>
       <article class="article">
         <a href="${item.url}" target="_blank">
         ${logosContent}</a>         
@@ -55,3 +60,7 @@ function renderDataExb() {
 
 // Llamar a la función para renderizar las exposiciones
 renderDataExb();
+
+
+
+//SCROLL DE IMAGENES

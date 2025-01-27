@@ -3,6 +3,7 @@
         "title": "NATURALEZAS SALVAJES",
         "desc": "Exposición colectiva con varias autoras. Comisariado por Guillermo Latorre en el espacio artístico La Nevera.",
         "images": [
+            "./images/exposiciones/naturalezas/naturalezas_salvajes.jpg",
             "./images/exposiciones/naturalezas/salvaje (1).jpeg", 
             "./images/exposiciones/naturalezas/salvaje (2).jpeg", 
             "./images/exposiciones/naturalezas/salvaje (3).jpeg", 
@@ -116,7 +117,7 @@
         "title": "CAMINO DEL PSICÓLOGO",
         "desc": "Colaboración en el número 1 de la revista VOODOO de arte y contracultura con la serie Camino del psicólogo.",
         "images": [
-            "./images/exposiciones/voodoo.PNG" 
+            "https://www.youtube.com/embed/IB7dJX64VP8?si=INcGw1rntNHrnHz_" 
         ],
         "imageDescriptions": [
             "Descripción de la imagen 1 del proyecto 1" 
