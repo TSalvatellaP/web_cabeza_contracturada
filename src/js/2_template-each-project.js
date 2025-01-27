@@ -60,7 +60,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en Facebook"
     >
-      <img src="/images/Asset 2.svg" alt="Facebook">
+      <img src="/images/logo_facebook.svg" alt="Facebook">
     </a>
     <a
       href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
@@ -68,7 +68,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en X"
     >
-      <img src="/images/Asset 1.svg" alt="X">
+      <img src="/images/logo_x.svg" alt="X">
     </a>
     <a
       href="https://pinterest.com/pin/create/button/?media=URL_DE_LA_IMAGEN&url=URL_DE_TU_OBRA"
@@ -76,7 +76,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en Pinterest"
     >
-      <img src="/images/Asset 10.svg" alt="Pinterest">
+      <img src="/images/logo_pinterest.svg" alt="Pinterest">
     </a>
     <a
       href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
@@ -84,7 +84,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en WhatsApp"
     >
-      <img src="/images/Asset 11.svg" alt="Whatsapp">
+      <img src="/images/logo_whatsapp.svg" alt="Whatsapp">
     </a>
     
   </div>
@@ -160,6 +160,7 @@ function changeSlide(n, totalImages, captionText) {
   modalImg.alt = mediaInModal[slideIndex].alt;
   updateCaption(slideIndex, totalImages, captionText);
 }
+
 function updateCaption(currentIndex, totalImages, captionText) {
   captionText.textContent = `${currentIndex + 1}/${totalImages} `; 
 }
@@ -172,13 +173,13 @@ addModalListeners()
 
 
 //MODAL SOCIAL
-document.addEventListener("DOMContentLoaded", () => {
+
   const shareContainer = document.querySelector(".share-container");
   const shareButton = document.querySelector(".share-button");
   
   // Evento para alternar el modal
   shareButton.addEventListener("click", () => {
-    shareContainer.classList.toggle("active");
+  shareContainer.classList.toggle("active");
   });
 
   // Cerrar el modal si haces clic fuera de él
@@ -187,4 +188,3 @@ document.addEventListener("DOMContentLoaded", () => {
       shareContainer.classList.remove("active");
     }
   });
-});

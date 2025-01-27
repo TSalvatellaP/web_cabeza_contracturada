@@ -1,7 +1,7 @@
 [   
     {
         "title": "TORUNDA",
-        "desc": "lorem jlalalalala",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe iure iusto quibusdam! In, recusandae error fugit provident temporibus accusamus, dolore, expedita atque ad maiores assumenda aut molestias amet rerum.",
         "images": [
             "./images/torunda/torunda.png" 
         ],
@@ -19,7 +19,7 @@
 
     {
         "title": "LAS TRES MARÍAS",
-        "desc": "lorem jlalalalala",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe iure iusto quibusdam! In, recusandae error fugit provident temporibus accusamus, dolore, expedita atque ad maiores assumenda aut molestias amet rerum.",
         "images": [
             "./images/las tres marias/marias.png "
             
@@ -62,7 +62,7 @@
     },
     {
         "title": "EL CALDERO ROTO",
-        "desc": "lorem jlalalalala",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe iure iusto quibusdam! In, recusandae error fugit provident temporibus accusamus, dolore, expedita atque ad maiores assumenda aut molestias amet rerum.",
         "images": [
            
             "./images/caldero/caldero 3.PNG",
@@ -354,7 +354,7 @@
     },
     {        
         "title": "PROCESIÓN DE LA VIRGEN DE LA BASURA",
-        "desc": "lorem jlalalalala",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe iure iusto quibusdam! In, recusandae error fugit provident temporibus accusamus, dolore, expedita atque ad maiores assumenda aut molestias amet rerum.",
         "images":
         ["./images/virgen/virgen_01.jpeg",
         "./images/virgen/virgen_02.jpeg",
