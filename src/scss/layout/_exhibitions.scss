@@ -34,6 +34,8 @@
     align-items: center;
     &_img{
         width:100%;
+        border: 2px solid $color_verde;
+        padding: 5px;
         @media(min-width: 768px){
         display: flex;
         border: 2px solid $color_verde;
@@ -41,6 +43,8 @@
     }
     &_video{
         width:425px;
+        border: 2px solid $color_verde;
+        padding: 5px;
         aspect-ratio: 16/9;
         object-fit: fill;
         
