@@ -36,7 +36,7 @@
   
 }
 .img_logo{
-    width: 200px;
+    width: 150px;
     
     }
 
@@ -80,4 +80,9 @@
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
     
   }
-  
+  .icons_header{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 20px ;
+  }

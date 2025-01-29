@@ -1,6 +1,5 @@
 .page_footer{
   background-color: white;
-  padding: 1rem;
   text-align: center;
     
 }
@@ -15,12 +14,12 @@
 }
 
 .icons_img{
-    height: 25px;
+    height: 20px;
 }
 
 .container_text{
     @include texts ();
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
