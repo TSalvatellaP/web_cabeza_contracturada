@@ -74,8 +74,8 @@
 
 .modal {
   position: fixed; /* Posiciona el modal de forma fija en la pantalla */
-  top: 50%; /* Centra el modal verticalmente */
-  left: 50%; /* Centra el modal horizontalmente */
+  top: 50%; 
+  left: 50%; 
   transform: translate(-50%, -50%); /* Ajusta el modal para que esté completamente centrado */
   width: 80%; /* Ajusta el tamaño del modal */
   max-width: 500px; /* Establece un tamaño máximo */

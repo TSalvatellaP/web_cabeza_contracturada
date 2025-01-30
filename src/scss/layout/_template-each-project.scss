@@ -67,11 +67,12 @@
   }
  
 .slide{
+    width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
     color: $color_rosa;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 45px;
 }

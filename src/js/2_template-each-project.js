@@ -57,7 +57,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en Facebook"
     >
-      <img src="/images/logo_facebook.svg" alt="Facebook">
+      <i class="fa-brands fa-square-instagram fa-lg"></i>
     </a>
     <a
       href="https://x.com/intent/tweet?url=URL_DE_TU_OBRA&text=¡Mira esta obra de arte!"
@@ -65,7 +65,7 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en X"
     >
-      <img src="/images/logo_x.svg" alt="X">
+      <i class="fa-brands fa-square-x-twitter fa-lg"></i>
     </a>
     <a
       href="https://pinterest.com/pin/create/button/?media=URL_DE_LA_IMAGEN&url=URL_DE_TU_OBRA"
@@ -73,16 +73,9 @@ function renderDataProject() {
       rel="noopener noreferrer"
       title="Compartir en Pinterest"
     >
-      <img src="/images/logo_pinterest.svg" alt="Pinterest">
+      <i class="fa-brands fa-square-pinterest fa-lg"></i>
     </a>
-    <a
-      href="https://api.whatsapp.com/send?text=¡Mira esta obra de arte! URL_DE_TU_OBRA"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Compartir en WhatsApp"
-    >
-      <img src="/images/logo_whatsapp.svg" alt="Whatsapp">
-    </a>
+   
     
   </div>
 </div>

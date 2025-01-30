@@ -25,7 +25,7 @@
     color: $color_rosa;
     @media(min-width: 768px) {
         display: grid;
-        grid-template-columns: 1fr 2fr; 
+        grid-template-columns: 1fr 1fr; 
         align-items: center;           
         }
 
@@ -47,8 +47,8 @@
     justify-self: end; /* Mueve a la derecha */
     margin-right: 50px;  
     &_ul{
-       display: none;    
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 2rem;
         
@@ -83,6 +83,7 @@
   .icons_header{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 5px;
     width: 20px ;
   }
