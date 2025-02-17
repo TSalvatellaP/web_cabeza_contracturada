@@ -16,15 +16,12 @@ function updateCarousel() {
 
 // Función para manejar el botón derecho (ahora hacia la izquierda)
 btnRight.addEventListener("click", () => {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = totalImages - 1; // Ir a la última imagen
-  }
+  currentIndex = (currentIndex - 1 + totalImages) % totalImages;
   updateCarousel();
 });
 
-// Función para manejar  el botón izquierdo (ahora hacia la derecha)
+// Función para manejar el botón izquierdo (avanza a la derecha)
 btnLeft.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1 + totalImages + 1) % totalImages;
+  currentIndex = (currentIndex + 1) % totalImages;
   updateCarousel();
 });

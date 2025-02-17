@@ -32,7 +32,7 @@ function renderDataProject() {
                    </video>`;
     } else {
       // Si es un enlace a una imagen
-      allMedia += `<img class="gallery_img js-gallery_img" src="${media}" alt="${imageDescription}"/>`;
+      allMedia += `<img class="gallery_img js-gallery_img" src="${media}" alt="${imageDescription}" data-index="${i}"/>`;
     }
   }
 
@@ -124,7 +124,6 @@ mediaInModal.forEach(item => {
       modal.style.display = "block"; // Muestra el modal
       modalImg.src = item.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
       modalImg.alt = item.alt;
-      titleImage.textContent = item.alt;
       slideIndex = parseInt(item.dataset.index);
       updateCaption(slideIndex, totalImages, captionText);
   

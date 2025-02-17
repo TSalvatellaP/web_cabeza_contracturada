@@ -41,12 +41,10 @@ function renderGallery() {
 
     // Añadir el proyecto a la galería
     gallery.innerHTML += `
-      <div class="card" ><a href="./template-each-project.html?id=${item.id}" class="project-link">
-        ${mediaElement}
-       <div class = "conteiner_title"><div class="square"> </div><div><p>${item.title}</p>
-       <p>lorem lorem lorem lorem </p></div></div>
-      </a> 
-      </div>`;
+       <a href="./template-each-project.html?id=${item.id}" class="project-link">
+       ${mediaElement}
+       <p>${item.title}</p>
+      </a>`;
   }
 
   // Agregar eventos a las imágenes

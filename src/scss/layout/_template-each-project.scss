@@ -47,8 +47,8 @@
 }
 
 .gallery_img {
-    border: 2px solid $color_verde;
-    padding: 5px;
+    //border: 2px solid $color_verde;
+    //padding: 5px;
     width: 400px; 
     height:auto; 
     object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
@@ -67,7 +67,7 @@
   }
  
 .slide{
-    width: 50%;
+    //width: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
     color: $color_rosa;
@@ -164,7 +164,7 @@
     max-width: 90%; // Ancho máximo del contenido
     padding: 20px;
     transition: all 0.3s ease;
-    border: 2px solid $color_verde;
+    //border: 2px solid $color_verde;
     max-width: 90%; // Ancho máximo del contenido
     max-height: 90vh; 
     margin: 20px auto; 

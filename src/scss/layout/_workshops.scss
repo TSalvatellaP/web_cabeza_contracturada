@@ -1,7 +1,7 @@
 .page_workshops{
     display: flex;
    justify-content: center;
-   margin: 45px;
+   //margin: 45px;
 }
 .workshops{
     @include texts ();
@@ -16,13 +16,14 @@
     text-align:center;
     &_img{
         width:100%;
-        border: 2px solid $color_verde;
-        padding: 5px;   
+        //border: 2px solid $color_verde;
+        //padding: 5px;   
     }
     @media(min-width: 768px){
         &_gallery{
+            font-size: 15px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr); 
+            grid-template-columns: repeat(4, 1fr); 
             gap: 45px;
             padding: 20px;
             text-align: left;

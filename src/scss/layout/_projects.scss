@@ -20,7 +20,7 @@
         height: 200px; 
         object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
         //border: 1px solid $color_rosa;
-        padding: 5px;
+        //padding: 5px;
         &:hover {   
             opacity: 0.5;
            
@@ -40,25 +40,4 @@
         
     }    
     
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.square{
-    width: 35px;
-    height: 35px;
-    background-color: $color_verde;
-}
-.conteiner_title{
-    
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: flex-start;
-    gap: 5px;
 }
