@@ -1,4 +1,4 @@
-@import 'core/variables';
+@use 'core/variables' as *;
 @import 'core/reset';
 @import 'core/mixins';
 @import 'layout/header';

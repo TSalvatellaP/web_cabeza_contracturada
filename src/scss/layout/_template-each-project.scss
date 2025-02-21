@@ -41,9 +41,16 @@
            
             
         }
+        iframe:only-child{
+          width: 600px;
+          height: 400px;
+        }
         
     }
     
+}
+iframe{
+  height: 300px;
 }
 
 .gallery_img {
@@ -204,4 +211,3 @@
     @include btn ();
    
   }
-  

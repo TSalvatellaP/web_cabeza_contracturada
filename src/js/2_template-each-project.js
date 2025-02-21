@@ -20,7 +20,7 @@ function renderDataProject() {
     const imageDescription = project.imageDescriptions[i];
     if (media.includes("youtube.com") || media.includes("vimeo.com")) {
       // Si es un enlace de video (por ejemplo, de YouTube o Vimeo)
-      allMedia += `<iframe class=" video js-gallery_media" 
+      allMedia += `<iframe class="js-gallery_media" 
                         src="${media}" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
