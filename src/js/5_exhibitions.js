@@ -1,10 +1,10 @@
-import data from "./exhibitions.json";
+import dataExh from "./exhibitions.json";
 
 const containerExb = document.querySelector('.js-container');
 
 // Función para renderizar las exposiciones
 function renderDataExb() {
-  const sortedData = [...data].sort((a, b) => b.id - a.id);
+  const sortedData = [...dataExh].sort((a, b) => b.id - a.id);
   let allMedia = "";
   
   // Recorrer cada exposición en el array `data`

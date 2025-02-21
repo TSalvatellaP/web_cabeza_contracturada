@@ -1,4 +1,4 @@
-import data from "./projects.json";
+import dataProject from "./projects.json";
 
 const containerProject = document.querySelector ('.js-container');
 //el id del proyecto proviene de la URL 
@@ -9,7 +9,7 @@ let slideIndex = 0;
 
 // Función para obtener el proyecto por su ID
 function getProjectById(id) {
-  return data.find((item) => item.id === id);
+  return dataProject.find((item) => item.id === id);
 }
 
 //Funcion para pintar el projecto en el html
@@ -92,9 +92,9 @@ const btnRight = document.querySelector ('.js-btn_scroll_right')
 // Función para cambiar el proyecto mostrando el siguiente o anterior
 function changeProject(offset) {
   // Hay que buscar la posicion ID
-  const currentIndex = data.findIndex((item) => item.id === projectId);
-  const newIndex = (currentIndex + offset + data.length) % data.length; // % para asegurarnos de que el índice nunca se desborde (devolverá al primer proyecto si estamos en el último, o al último proyecto si estamos en el primero).
-  const newProject = data[newIndex];
+  const currentIndex = dataProject.findIndex((item) => item.id === projectId);
+  const newIndex = (currentIndex + offset + dataProject.length) % dataProject.length; // % para asegurarnos de que el índice nunca se desborde (devolverá al primer proyecto si estamos en el último, o al último proyecto si estamos en el primero).
+  const newProject = dataProject[newIndex];
   // Actualiza la URL para cargar el nuevo proyecto
   window.location.search = `?id=${newProject.id}`;
 }
