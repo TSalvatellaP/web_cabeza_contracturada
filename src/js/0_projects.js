@@ -1,5 +1,6 @@
 import data from "./projects.json";
 
+
 /* 
 1- En el menu de projectos al clickar en una imagen, tiene que abrir la página de ese proyecto. (un evento llama al id concreto del proyecto) click === data.id
 2- Se abre la página nueva de un projecto. Ahi es donde se tiene que pintar 
@@ -10,17 +11,22 @@ ejecutar al cargar la página la función que recorre el array
 */
 
 const gallery = document.querySelector('.js-gallery');
+const optionSelect = document.getElementById('optionSelect');
 
 // Función para recorrer el array y renderizar la galería
-function renderGallery() {
-  const sortedData = [...data].sort((a, b) => b.id - a.id);
-  gallery.innerHTML = ""; // Limpiar la galería antes de renderizar
+function renderGallery(projects) {
+  gallery.innerHTML = ""; // Limpiar la galería
 
-  for (const item of sortedData) {
-    const imageDescription = item.imageDescriptions[0] || "Descripción no disponible";
-    const mediaSrc = item.images[0] || "";
-    let mediaElement = "";
+    if (!projects || projects.length === 0) {
+        gallery.innerHTML = "<p>No hay proyectos para mostrar.</p>";
+        return;
+    }
+    const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
+    sortedProjects.forEach(item => { // Usamos forEach para simplificar
+        const imageDescription = item.imageDescriptions[0] || "Descripción no disponible";
+        const mediaSrc = item.images && item.images[0] ? item.images[0] : ""; // Verificamos si existe item.images
 
+        let mediaElement = "";
     // Renderizar según el tipo de archivo
     if (mediaSrc.includes("youtube.com") || mediaSrc.includes("vimeo.com")) {
       mediaElement = `
@@ -45,7 +51,7 @@ function renderGallery() {
        ${mediaElement}
        <p>${item.title}</p>
       </a>`;
-  }
+  });
 
   // Agregar eventos a las imágenes
   addImageClickEvents();
@@ -68,5 +74,19 @@ function handleClickImg(event) {
   }
 }
 
+// Filtrar proyectos según seleccion
+function handleOptionSelect () {
+  const selectedCategory = optionSelect.value;
+  
+  // Filtrar los datos según la categoría seleccionada
+  const filteredData = selectedCategory === '' ? data : data.filter(item => item.type === selectedCategory);
+
+  // Renderizar la galería con los proyectos filtrados
+  renderGallery(filteredData);
+  console.log(filteredData);
+ 
+}
+
+optionSelect.addEventListener('change',handleOptionSelect);
 // Ejecutar la función para renderizar la galería al cargar la página
-renderGallery();
+renderGallery(data);

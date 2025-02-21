@@ -41,3 +41,24 @@
     }    
     
 }
+.filter-select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid $color_rosa;
+    border-radius: 5px;
+    color: $color_morado;
+    :focus {
+        background-color: #f0f0f0;
+        color: $color_morado;
+      }
+    option:checked {
+        background-color: $color_verde;
+        color:$color_rosa;
+      }
+  }
+
+ 
+ 
