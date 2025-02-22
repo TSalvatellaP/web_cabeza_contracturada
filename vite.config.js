@@ -11,6 +11,9 @@ import FastGlob from 'fast-glob'
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+// Buscar todos los archivos .js en la carpeta src/js
+const jsFiles = FastGlob.sync('src/js/*.js');
+
 // Get all html files
 const htmlFilesList = Object.fromEntries(
   FastGlob.sync('src/*.html').map(file => [
@@ -25,10 +28,14 @@ const htmlFilesList = Object.fromEntries(
     fileURLToPath(new URL(file, import.meta.url))
   ]));
 
+// Crear el objeto inputFilesList dinámicamente a partir de los archivos JS encontrados
 const inputFilesList = {
   ...htmlFilesList,
-  'main': 'src/js/main.js',
-  'other': 'src/js/other.js', 
+  ...jsFiles.reduce((acc, file) => {
+    const fileName = file.slice(0, file.length - path.extname(file).length); // Quitar la extensión .js
+    acc[fileName] = file;
+    return acc;
+  }, {}),
 }
 
 export default defineConfig({
@@ -68,7 +75,7 @@ export default defineConfig({
       /* pass your config */
     }),
     concat({
-      input: ['main.js', 'other.js']
+      input: jsFiles
     }),
   ],
 });
