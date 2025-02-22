@@ -1,2 +1,2 @@
-console.log(">> Ready :)");
+const o=document.querySelector(".js-menu"),l=document.querySelector(".js-menuOpen");l.addEventListener("click",()=>{o.classList.toggle("collapsed"),console.log("abre menu")});const r=document.querySelector(".js-carousel"),t=document.querySelectorAll(".js-carousel_img"),u=document.querySelector(".js-btn_scroll_left"),a=document.querySelector(".js-btn_scroll_right");let e=0;const c=t.length;function n(){r.style.transform=`translateX(-${e*50}%)`,t.forEach(s=>s.classList.remove("active")),t[e].classList.add("active")}a.addEventListener("click",()=>{e=(e-1+c)%c,n()});u.addEventListener("click",()=>{e=(e+1)%c,n()});
 //# sourceMappingURL=main.js.map

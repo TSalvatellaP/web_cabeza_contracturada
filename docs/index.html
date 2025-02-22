@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HOME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" href="./images/favicon.png" />
+  <script type="module" crossorigin src="./assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="./js/main.js"></script>
+  <link rel="stylesheet" href="./assets/main-e230175e.css">
+</head>
+
+<body>
+  <header class="page_header">
+        <a href="./index.html"><img class="img_logo" src="./images/Cabeza_contracturada.png" alt="logo"></a>
+        <nav class="menu">         
+                <ul class="menu_ul" >
+                    <li><a class="links" href="./projects.html">PROYECTOS</a></li>
+                    <li><a class="links" href="./workshops.html">TALLERES</a></li>
+                    <li><a class="links" href="./exhibitions.html">EXPOSICIONES</a></li>
+                    <li><a class="links" href="./about.html">CONTACTO</a></li>
+                    <li>
+                      <div class="icons_header">
+                        <i class="fa-regular fa-envelope"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </div>
+                    </li>    
+                </ul>
+        </nav>
+        <i class="fa-solid fa-bars hamb js-menuOpen" style="color: white;"></i>
+        
+  <nav class="nav collapsed js-menu">
+    <ul>
+      <li><a class="links" href="./projects.html">PROYECTOS</a></li>
+      <li><a class="links" href="./workshops.html">TALLERES</a></li>
+      <li><a class="links" href="./exhibitions.html">EXPOSICIONES</a></li>
+      <li><a class="links" href="./about.html">CONTACTO</a></li>  
+  </nav>
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
-  </head>
-
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
 </header>
-
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
-
-    </li>
-  </ul>
+  <main class="landing">
+    <i class="fa-solid fa-angle-left btn_scroll js-btn_scroll_left "></i>
+    <div class="carousel">    
+         <div class="carousel_items js-carousel ">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (9)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (1)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (8)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (2)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (3)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (4)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (5)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (6)">
+                <img class="carousel_items__img js-carousel_img " src="https://placehold.co/600x400" alt="image (7)">
+                
+         </div>
+        
+    </div>
+    <i class="fa-solid fa-angle-right btn_scroll right js-btn_scroll_right"></i>
+    
 </main>
+  <footer class="page_footer">
+    
+    <div class="container_icons" >
+        <a href="https://open.spotify.com/show/0dhjAbZBCJ2QCJtI9SytCP?si=666a97ec634b4e35">
+            <i class="fa-brands fa-spotify  icons_img"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/taniasalvatella">
+            <i class="fa-brands fa-linkedin-in  icons_img"></i>
+        </a>
+        <a href="https://www.instagram.com/cabeza_contracturada/">
+            <i class="fa-brands fa-instagram  icons_img"></i>
+        </a>
+        <a href="https://vimeo.com/taniasalvatella">
+            <i class="fa-brands fa-vimeo-v  icons_img"></i>
+        <a href="https://www.behance.net/taniasalvatella">
+            <i class="fa-brands fa-behance  icons_img"></i>
+        </a>
+    </div>
+    
+   <div class="container_text">
+       <h5>Política de privacidad</h5>
+       <h6>© 2025 Tania Salvatella</h6>
+   </div>
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-  </small>
 </footer>
 
-    </div>
-    <script src="./js/main.js"></script>
-  </body>
+
+  
+  
+ 
+</body>
+
 </html>
