@@ -50,6 +50,8 @@ export default defineConfig({
           // default value
           // ref: https://rollupjs.org/configuration-options/#output-entryfilenames
           return "[name].js";
+          // Otros archivos JS
+          return `js/${name}.js`;
         },
       },
     },
@@ -66,7 +68,7 @@ export default defineConfig({
       /* pass your config */
     }),
     concat({
-      input: ['main.js']
+      input: ['main.js',  'other.js']
     }),
   ],
 });
