@@ -18,13 +18,15 @@
     &_img{
         width: 300px; 
         height: 200px; 
-        object-fit: cover; /* Ajusta cómo se adapta la imagen al contenedor */
+        object-fit: cover;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
         //border: 1px solid $color_rosa;
         //padding: 5px;
         &:hover {   
-            opacity: 0.5;
-           
-        
+            opacity: $project-hover-opacity;
+            transform: scale($project-hover-scale);
+                   
         }
         
     }
@@ -32,7 +34,6 @@
         &_gallery{
             display: grid;
             grid-template-columns: repeat(3, 1fr); 
-            grid-template-rows: repeat(3, 1fr);
             gap: 20px;
             padding: 20px;
             

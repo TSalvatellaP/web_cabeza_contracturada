@@ -21,14 +21,15 @@
     padding-bottom: 25px;
 }
 .content_gallery {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 3em;
     justify-content: center;
     align-items: center;
     gap: 15px; 
     padding-top: 25px;
     @media(min-width: 768px){
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         justify-items: center;  
         justify-self: center;
@@ -38,14 +39,18 @@
             align-self: center;
             width:80%;
             height:auto;
-           
-            
+                    
         }
         iframe:only-child{
           width: 600px;
           height: 400px;
         }
-        
+     
+    }
+    @media(min-width: 1024px){
+      grid-template-columns: repeat(4, 1fr);
+
+
     }
     
 }
@@ -62,7 +67,8 @@ iframe{
     transition: transform 0.3s ease;
     cursor: pointer;
     &:hover {
-        opacity: 0.5;
+      opacity: $project-hover-opacity;
+      transform: scale($project-hover-scale);
        
     } 
     @media(min-width: 768px){
