@@ -1,4 +1,4 @@
-import dataProject from "./projects.json";
+import data from "./projects.json";
 
 
 /* 
@@ -79,7 +79,7 @@ function handleOptionSelect () {
   const selectedCategory = optionSelect.value;
   
   // Filtrar los datos según la categoría seleccionada
-  const filteredData = selectedCategory === '' ? dataProject : dataProject.filter(item => item.type === selectedCategory);
+  const filteredData = selectedCategory === '' ? data : data.filter(item => item.type === selectedCategory);
 
   // Renderizar la galería con los proyectos filtrados
   renderGallery(filteredData);
@@ -89,4 +89,4 @@ function handleOptionSelect () {
 
 optionSelect.addEventListener('change',handleOptionSelect);
 // Ejecutar la función para renderizar la galería al cargar la página
-renderGallery(dataProject);
+renderGallery(data);

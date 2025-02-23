@@ -86,8 +86,8 @@ function renderDataProject() {
 
 /// Botones para moverse de un proyecto a otro next <- ->
 
-const btnLeft = document.querySelector ('.js-btn_scroll_left')
-const btnRight = document.querySelector ('.js-btn_scroll_right')
+const buttonL = document.querySelector ('.js-btn_scroll_left')
+const buttonR = document.querySelector ('.js-btn_scroll_right')
 
 // Función para cambiar el proyecto mostrando el siguiente o anterior
 function changeProject(offset) {
@@ -100,8 +100,8 @@ function changeProject(offset) {
 }
 
 // Habilitar los botones para navegar entre proyectos
-btnRight.addEventListener("click", () => changeProject(-1)); 
-btnLeft.addEventListener("click", () => changeProject(1)); 
+buttonR.addEventListener("click", () => changeProject(-1)); 
+buttonL.addEventListener("click", () => changeProject(1)); 
 
 // Llamar a la función para renderizar el proyecto
 renderDataProject ();

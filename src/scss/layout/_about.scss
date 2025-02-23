@@ -65,23 +65,23 @@
 }
 
 
-.modal {
-  position: fixed; /* Posiciona el modal de forma fija en la pantalla */
+.overlay{
+  position: fixed; /* Posiciona el overlayde forma fija en la pantalla */
   top: 50%; 
   left: 50%; 
-  transform: translate(-50%, -50%); /* Ajusta el modal para que esté completamente centrado */
-  width: 80%; /* Ajusta el tamaño del modal */
+  transform: translate(-50%, -50%); /* Ajusta el overlaypara que esté completamente centrado */
+  width: 80%; /* Ajusta el tamaño del overlay*/
   max-width: 500px; /* Establece un tamaño máximo */
   background-color: white;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  display: none; /* Asegúrate de que el modal esté oculto por defecto */
-  z-index: 9999; /* Asegura que el modal esté sobre otros elementos */
+  display: none; /* Asegúrate de que el overlayesté oculto por defecto */
+  z-index: 9999; /* Asegura que el overlayesté sobre otros elementos */
 
 
 }
 
-.modal-content {
+.overlay-content {
   width:100%;
   height: auto;
   object-fit: contain;
@@ -102,7 +102,7 @@
   cursor: pointer;
   z-index: 10000; /* Asegura que la "x" esté sobre otros elementos */
 }
-.modal-title{
+.overlay-title{
   font-family: $font_text;
   color: $color_rosa;
 
