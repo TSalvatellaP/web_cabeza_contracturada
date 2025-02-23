@@ -1,0 +1,2 @@
+const n=document.querySelector(".js-carousel"),t=document.querySelectorAll(".js-carousel_img"),o=document.querySelector(".js-btn_scroll_left"),r=document.querySelector(".js-btn_scroll_right");let e=0;const c=t.length;function s(){n.style.transform=`translateX(-${e*50}%)`,t.forEach(l=>l.classList.remove("active")),t[e].classList.add("active")}r.addEventListener("click",()=>{e=(e-1+c)%c,s()});o.addEventListener("click",()=>{e=(e+1)%c,s()});
+//# sourceMappingURL=3_landing.js.map
