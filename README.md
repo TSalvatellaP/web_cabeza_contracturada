@@ -2,6 +2,22 @@
 
 Este proyecto es una aplicación web que muestra un portafolio o un sitio web creativo, utilizando JavaScript modular, SCSS para estilos y datos JSON.
 
+## Funcionalidades Principales
+
+* **Página de Proyectos**:
+    * Filtrado dinámico de proyectos por categoría.
+    * Galería de proyectos con imágenes, videos y enlaces a páginas individuales.
+* **Página Individual de Proyecto**:
+    * Visualización detallada de cada proyecto con imágenes, videos, descripción y fecha.
+    * Navegación entre proyectos.
+    * Modal para compartir en redes sociales.
+* **Página de Exposiciones**:
+    * Renderizado dinámico de exposiciones con imágenes, videos, descripción y logos.
+* **Página de Inicio**:
+    * Carrusel de imágenes.
+* **Menú de Navegación**:
+    * Menú desplegable para navegación en dispositivos móviles.
+
 ## Estructura del Proyecto
 ├── docs/
 ├── node_modules/
