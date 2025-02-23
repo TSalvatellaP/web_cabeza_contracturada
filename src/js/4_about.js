@@ -12,7 +12,7 @@ images.forEach(image => {
     image.addEventListener('click', function() {
         modal.style.display = "block"; // Muestra el modal
         modalImg.src = this.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
-        captionText.textContent = this.alt || '';
+       
         
     });
 });
@@ -25,7 +25,7 @@ closeBtn.addEventListener('click', function() {
 specialImage.addEventListener('click', function() {
     modal.style.display = "block";
     modalImg.src = imageForModal; 
-    captionText.textContent = this.alt || '';// Cambia el src del modal por la imagen específica
+   
     
 });
 //PREGUNTAR POR QUÉ ES NECESARIO USAR EL ID Y una class
