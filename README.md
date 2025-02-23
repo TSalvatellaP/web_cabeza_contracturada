@@ -20,8 +20,7 @@ Este proyecto es una aplicación web que muestra un portafolio o un sitio web cr
 
 ## Estructura del Proyecto
 
-```
-├── docs/
+```├── docs/
 ├── node_modules/
 ├── public/
 ├── src/
@@ -63,7 +62,7 @@ Este proyecto es una aplicación web que muestra un portafolio o un sitio web cr
 ├── .gitignore
 ├── LICENSE
 ├── package-lock.json
-└── package.json
+└── package.json```
 
 ```
 
