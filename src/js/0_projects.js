@@ -87,6 +87,7 @@ function handleOptionSelect () {
  
 }
 
-optionSelect.addEventListener('change',handleOptionSelect);
-// Ejecutar la función para renderizar la galería al cargar la página
-renderGallery(data);
+document.addEventListener('DOMContentLoaded', () => {
+  optionSelect.addEventListener('change', handleOptionSelect);
+  renderGallery(data);
+});

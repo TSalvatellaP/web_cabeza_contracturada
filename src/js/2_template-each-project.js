@@ -86,8 +86,8 @@ function renderDataProject() {
 
 /// Botones para moverse de un proyecto a otro next <- ->
 
-const buttonL = document.querySelector ('.js-btn_scroll_left')
-const buttonR = document.querySelector ('.js-btn_scroll_right')
+const buttonL = document.querySelector ('.js-button_scroll_left')
+const buttonR = document.querySelector ('.js-button_scroll_right')
 
 // Función para cambiar el proyecto mostrando el siguiente o anterior
 function changeProject(offset) {
@@ -109,11 +109,11 @@ renderDataProject ();
 //VENTANA MODAL AL CLICKAR CADA IMAGEN
 const mediaInModal = document.querySelectorAll ('.js-gallery_img');
 const modal = document.querySelector('.js-mymodal');
-const modalImg = document.querySelector('.js-imgModal');
-const closeBtn = document.querySelector('.js-close');
+const imgModal = document.querySelector('.js-imgModal');
+const closeButton = document.querySelector('.js-close');
 const scrollLeft = document.querySelector ('.js-scroll_left');
 const scrollRight = document.querySelector ('.js-scroll_right');
-const captionText = document.querySelector ('.js-caption')
+const imageText = document.querySelector ('.js-caption')
 const totalImages = mediaInModal.length;
 
 
@@ -122,39 +122,39 @@ function addModalListeners() {
 mediaInModal.forEach(item => {
   item.addEventListener('click', function() {
       modal.style.display = "block"; // Muestra el modal
-      modalImg.src = item.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
-      modalImg.alt = item.alt;
+      imgModal.src = item.src; // Cambia el src de la imagen del modal por la de la imagen clickeada
+      imgModal.alt = item.alt;
       slideIndex = parseInt(item.dataset.index);
-      updateCaption(slideIndex, totalImages, captionText);
+      updateCaption(slideIndex, totalImages, imageText);
   
   });
 });
 }
 scrollLeft.addEventListener('click', () => {
-  changeSlide(-1, totalImages, captionText);
+  changeSlide(-1, totalImages, imageText);
 });
 
 scrollRight.addEventListener('click', () => {
-  changeSlide(1, totalImages, captionText);
+  changeSlide(1, totalImages, imageText);
 });
 
-function changeSlide(n, totalImages, captionText) {
+function changeSlide(n, totalImages, imageText) {
   slideIndex += n;
   if (slideIndex < 0) {
       slideIndex = mediaInModal.length - 1;
   } else if (slideIndex >= mediaInModal.length) {
       slideIndex = 0;
   }
-  modalImg.src = mediaInModal[slideIndex].src;
-  modalImg.alt = mediaInModal[slideIndex].alt;
-  updateCaption(slideIndex, totalImages, captionText);
+  imgModal.src = mediaInModal[slideIndex].src;
+  imgModal.alt = mediaInModal[slideIndex].alt;
+  updateCaption(slideIndex, totalImages, imageText);
 }
 
-function updateCaption(currentIndex, totalImages, captionText) {
-  captionText.textContent = `${currentIndex + 1}/${totalImages} `; 
+function updateCaption(currentIndex, totalImages, imageText) {
+  imageText.textContent = `${currentIndex + 1}/${totalImages} `; 
 }
 // Cierra el modal cuando se hace clic en la "x"
-closeBtn.addEventListener('click', function() {
+closeButton.addEventListener('click', function() {
   modal.style.display = "none";
 });
 
