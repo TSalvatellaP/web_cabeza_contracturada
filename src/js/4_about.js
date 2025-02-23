@@ -4,7 +4,7 @@ const modalImg = document.getElementById('imgModal');
 const captionText = document.getElementById('caption');
 const closeBtn = document.querySelector('.js-close');
 const specialImage = document.querySelector('.js-img_special');
-const imageForSpecial = ("https://drive.google.com/file/d/1OaIlLtpt0Si1vNpwPqqdTTek5o8IzrZ4/view?usp=drive_link");
+const imageForSpecial = "/images/me/me_17.jpg";
 
 // Abre el modal con la imagen ampliada
 images.forEach(image => {
