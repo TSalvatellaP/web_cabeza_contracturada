@@ -23,5 +23,5 @@ closeBtn.addEventListener('click', function() {
 
 specialImage.addEventListener('click', function() {
     modal.style.display = "block";
-    modalImg.src = imageForSpecial; 
+    modalImg.src = imageForSpecial.src; 
 });
