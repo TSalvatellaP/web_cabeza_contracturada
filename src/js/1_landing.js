@@ -17,7 +17,7 @@ function updateCarousel() {
   }
 }
 
-// Función para manejar el botón derecho (avanza a la derecha)
+// Función para manejar el botón derecho 
 if (buttonRight) {
   buttonRight.addEventListener("click", () => {
     pointIndex = (pointIndex + 1) % totalImgs;
@@ -25,7 +25,7 @@ if (buttonRight) {
   });
 }
 
-// Función para manejar el botón izquierdo (retrocede a la izquierda)
+// Función para manejar el botón izquierdo 
 if (buttonLeft) {
   buttonLeft.addEventListener("click", () => {
     pointIndex = (pointIndex - 1 + totalImgs) % totalImgs;

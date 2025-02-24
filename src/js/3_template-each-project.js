@@ -1,10 +1,8 @@
 import data from "./projects.json";
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log("DOM Cargado");
   const containerProject = document.querySelector('.js-container');
-  
-  // El id del proyecto proviene de la URL 
+    // El id del proyecto proviene de la URL 
   const urlParams = new URLSearchParams(window.location.search);
   let projectId = parseInt(urlParams.get("id"));
   let allMedia = "";
