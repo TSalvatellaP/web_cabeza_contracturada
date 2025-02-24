@@ -1,5 +1,4 @@
 import dataExh from "./exhibitions.json";
-document.addEventListener('DOMContentLoaded', () => {
 const containerExb = document.querySelector('.js-container');
 
 // Función para renderizar las exposiciones
@@ -60,16 +59,3 @@ function renderDataExb() {
 // Llamar a la función para renderizar las exposiciones
 renderDataExb();
 
-// SCROLL DE IMAGENES (Implementación básica)
-// const sections = document.querySelectorAll('.section');
-
-// sections.forEach(section => {
-//   const img = section.querySelector('.section_img');
-//   if (img) {
-//     img.addEventListener('wheel', (event) => {
-//       event.preventDefault();
-//       img.scrollLeft += event.deltaY;
-//     });
-//   }
-// });
-});
