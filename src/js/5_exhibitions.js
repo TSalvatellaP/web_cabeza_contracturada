@@ -5,7 +5,7 @@ const containerExb = document.querySelector('.js-container');
 // Función para renderizar las exposiciones
 function renderDataExb() {
   const sortedData = [...dataExh].sort((a, b) => b.id - a.id);
-  let allMedia = "";
+  let allContent = "";
   
   // Recorrer cada exposición en el array `data`
   for (const item of sortedData) {
@@ -35,7 +35,7 @@ function renderDataExb() {
       }
     }
     // Construir el contenido HTML de la sección
-    allMedia += `
+    allContent += `
       <section class="section">
       <div class="div_media">
         
@@ -55,12 +55,10 @@ function renderDataExb() {
   }
 
   // Insertar el contenido generado en el contenedor principal
-  containerExb.innerHTML = allMedia;
+  containerExb.innerHTML = allContent;
 }
 
 // Llamar a la función para renderizar las exposiciones
 renderDataExb();
 
 
-
-//SCROLL DE IMAGENES
