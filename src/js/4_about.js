@@ -3,7 +3,7 @@ const modal = document.getElementById('myModal');
 const modalImg = document.getElementById('imgModal');
 const captionText = document.getElementById('caption');
 const closeBtn = document.querySelector('.js-close');
-const specialImage = document.querySelector('.js-img_special');
+let specialImage = document.querySelector('.js-img_special');
 const imageForSpecial = "/images/me/me_17.jpg";
 
 // Abre el modal con la imagen ampliada
