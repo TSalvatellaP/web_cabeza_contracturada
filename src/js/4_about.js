@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const images = document.querySelectorAll('.js-about_img'); // Selecciona todas las imágenes
 const overlay = document.getElementById('myoverlay');
 const overlayImg = document.getElementById('imgoverlay');
@@ -25,4 +26,5 @@ specialImage.addEventListener('click', function() {
     overlay.style.display = "block";
     overlayImg.src = imageForSpecial;
     
+});
 });

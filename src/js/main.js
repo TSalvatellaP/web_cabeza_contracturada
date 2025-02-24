@@ -1,9 +1,13 @@
 'use strict';
-import './0_projects.js';
-import './1_menu.js';
-import './2_template-each-project.js';
-import './3_landing.js';
-import './4_about.js';
+
+import './0_menu.js';
+import './1_landing.js';
+import './2_projects.js';
+import './3_template-each-project.js';
 import './5_exhibitions.js';
+import './4_about.js';
+
+
+
 
   

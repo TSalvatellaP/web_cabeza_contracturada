@@ -1,6 +1,6 @@
 import dataExh from "./exhibitions.json";
-
-const containerExb = document.querySelector('.js-container');
+document.addEventListener('DOMContentLoaded', () => {
+const containerExb = document.querySelector('.js-container_exh');
 
 // Función para renderizar las exposiciones
 function renderDataExb() {
@@ -61,4 +61,4 @@ function renderDataExb() {
 // Llamar a la función para renderizar las exposiciones
 renderDataExb();
 
-
+});
