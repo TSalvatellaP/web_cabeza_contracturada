@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{const c=document.querySelector(".js-carousel"),e=document.querySelectorAll(".js-carousel_img"),s=document.querySelector(".js-button_scroll_left"),l=document.querySelector(".js-button_scroll_right");let t=0;const o=e.length;function n(){c&&e.length>0&&(c.style.transform=`translateX(-${t*50}%)`,e.forEach(r=>r.classList.remove("active")),e[t].classList.add("active"))}l&&l.addEventListener("click",()=>{t=(t+1)%o,n()}),s&&s.addEventListener("click",()=>{t=(t-1+o)%o,n()}),n()});
+//# sourceMappingURL=1_landing.js.map
