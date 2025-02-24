@@ -5,7 +5,7 @@ const overlayImg = document.getElementById('imgoverlay');
 const captionT = document.getElementById('caption');
 const closeButton = document.querySelector('.js-close');
 let specialImage = document.querySelector('.js-img_special');
-const imageForSpecial = "/images/me/me_17.jpg";
+const imageForSpecial = "public/images/me/me_17.jpg";
 
 // Abre el overlay con la imagen ampliada
 images.forEach(image => {
