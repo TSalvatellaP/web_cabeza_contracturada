@@ -1,38 +1,39 @@
-document.addEventListener('DOMContentLoaded', () => {
-// Seleccionar los elementos del carrusel
-const carousel = document.querySelector(".js-carousel");
-const imgs = document.querySelectorAll(".js-carousel_img");
-const buttonLeft = document.querySelector(".js-button_scroll_left");
-const buttonRight = document.querySelector(".js-button_scroll_right");
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".js-carousel");
+  const prevButton = document.querySelector(".js-button_scroll_left");
+  const nextButton = document.querySelector(".js-button_scroll_right");
+  const autoplayCheckbox = document.querySelector(".js-autoplay");
+  let interval;
+  let index = 0;
+  const items = document.querySelectorAll(".js-carousel_img");
+  const totalItems = items.length;
+  const itemWidth = items[0].clientWidth + 10;
 
-let pointIndex = 0;
-const totalImgs = imgs.length;
-
-// Función para actualizar la posición del carrusel
-function updateCarousel() {
-  if (carousel && imgs.length > 0) { // Verifica si carousel e imgs existen
-    carousel.style.transform = `translateX(-${pointIndex * 50}%)`;
-    imgs.forEach(image => image.classList.remove('active'));
-    imgs[pointIndex].classList.add('active');
+  function scrollCarousel(direction) {
+    if (direction === "next") {
+      index = (index + 1) % totalItems;
+    } else {
+      index = (index - 1 + totalItems) % totalItems;
+    }
+    carousel.style.transform = `translateX(-${index * itemWidth}px)`;
   }
-}
 
-// Función para manejar el botón derecho 
-if (buttonRight) {
-  buttonRight.addEventListener("click", () => {
-    pointIndex = (pointIndex + 1) % totalImgs;
-    updateCarousel();
+  nextButton.addEventListener("click", () => scrollCarousel("next"));
+  prevButton.addEventListener("click", () => scrollCarousel("prev"));
+
+  function startAutoplay() {
+    interval = setInterval(() => scrollCarousel("next"), 2000);
+  }
+
+  function stopAutoplay() {
+    clearInterval(interval);
+  }
+
+  autoplayCheckbox.addEventListener("change", function () {
+    if (this.checked) {
+      startAutoplay();
+    } else {
+      stopAutoplay();
+    }
   });
-}
-
-// Función para manejar el botón izquierdo 
-if (buttonLeft) {
-  buttonLeft.addEventListener("click", () => {
-    pointIndex = (pointIndex - 1 + totalImgs) % totalImgs;
-    updateCarousel();
-  });
-}
-
-
-updateCarousel();
 });

@@ -1,4 +1,4 @@
-import dataProject from "./projects.json";
+import dataProject from "../data/projects.json";
 document.addEventListener('DOMContentLoaded', () => {
 console.log(dataProject);
 const gallery = document.querySelector('.js-gallery');

@@ -1,4 +1,4 @@
-import data from "./projects.json";
+import data from "../data/projects.json";
 
 document.addEventListener('DOMContentLoaded', function() {
   const containerProject = document.querySelector('.js-container');

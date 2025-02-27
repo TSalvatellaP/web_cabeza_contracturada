@@ -1,4 +1,4 @@
-import dataExh from "./exhibitions.json";
+import dataExh from "../data/exhibitions.json";
 document.addEventListener('DOMContentLoaded', () => {
 const containerExb = document.querySelector('.js-container_exh');
 

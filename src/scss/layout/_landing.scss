@@ -1,52 +1,56 @@
 .landing{
-    @include texts ();
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $color_rosa;
-    padding-bottom: 45px;
- 
+  @include texts ();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $color_rosa;
+  padding-bottom: 45px;
+
 }
 
-.carousel{
-    margin: 20px;
-    //border: 2px solid $color_verde;
-    padding: 5px;
-    &_items{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-      &__img{
-        width: 100%;   
-        }
-    }
-    @media(min-width: 768px){
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-        &_items{
-        flex-direction: row;
-        transition: transform 0.5s ease;
-            &__img{
-            height: 50vh;
-            opacity: 0.5; 
-            }
-        }   
-    }
-   
+.slider{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.active{
-    opacity: 1;
-   
+.carousel {
+  width: 600px;
+  overflow: hidden;
+  display: flex;
 }
-.btn_scroll{
-    display: none;
-    @media(min-width: 768px){
-    @include btn ();
-    transform: translateX(25px);
-    }
+.carousel_ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease-in-out;
+  }
+
+.carousel_img{
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+      opacity: $project-hover-opacity;
+      transform: scale($project-hover-scale);
+       
+    } 
+  }
+
+.btn_scroll {
+  @include btn ();
+  position: absolute;
+  top: 50%; 
 }
+
 .right{
-    transform:translateX(-25px);
+  transform:translateX(550px);
 
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
 }
