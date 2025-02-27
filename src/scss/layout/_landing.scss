@@ -29,6 +29,7 @@
   }
 
 .carousel_img{
+  object-fit: cover;
     transition: filter 0.3s ease, box-shadow 0.3s ease;
     &:hover {
       opacity: $project-hover-opacity;
