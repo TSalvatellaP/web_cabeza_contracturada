@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const carousel = document.querySelector(".js-carousel");
   const prevButton = document.querySelector(".js-button_scroll_left");
   const nextButton = document.querySelector(".js-button_scroll_right");
-  const autoplayCheckbox = document.querySelector(".js-autoplay");
-  let interval;
   let index = 0;
   const items = document.querySelectorAll(".js-carousel_img");
   const totalItems = items.length;
@@ -21,19 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
   nextButton.addEventListener("click", () => scrollCarousel("next"));
   prevButton.addEventListener("click", () => scrollCarousel("prev"));
 
-  function startAutoplay() {
-    interval = setInterval(() => scrollCarousel("next"), 2000);
-  }
-
-  function stopAutoplay() {
-    clearInterval(interval);
-  }
-
-  autoplayCheckbox.addEventListener("change", function () {
-    if (this.checked) {
-      startAutoplay();
-    } else {
-      stopAutoplay();
-    }
-  });
 });
